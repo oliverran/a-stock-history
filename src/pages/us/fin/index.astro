@@ -1,0 +1,34 @@
+---
+import HubPage from '../../../layouts/HubPage.astro';
+import { usFinHub } from '../../../content/us/fin';
+import { getLastModifiedForPrefix, loadApiManifest } from '../../../lib/api/manifest';
+
+const manifest = await loadApiManifest().catch(() => null);
+const lastUpdated = manifest ? getLastModifiedForPrefix(manifest, '/api/us/fin') : undefined;
+
+const sections = usFinHub.sections.map((s) => ({
+  sectionNumber: s.sectionNumber,
+  title: s.title,
+  description: s.description,
+  panels: s.panelKeys.map((k) => {
+    const p = usFinHub.panels[k];
+    return {
+      href: `/us/fin/${p.key}`,
+      title: p.title,
+      description: p.description,
+    };
+  }),
+}));
+---
+
+<HubPage
+  title={usFinHub.title}
+  description={usFinHub.description}
+  heroTitle={usFinHub.heroTitle}
+  heroDescription={usFinHub.heroDescription}
+  sections={sections}
+  related={usFinHub.related}
+  lastUpdated={lastUpdated}
+  lang={usFinHub.lang}
+/>
+

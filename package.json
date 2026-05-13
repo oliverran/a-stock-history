@@ -6,10 +6,14 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "predev": "tsx scripts/build-all.ts",
     "dev": "astro dev",
+    "prebuild": "tsx scripts/build-all.ts",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:all": "tsx scripts/build-all.ts",
+    "build:manifest": "tsx scripts/build-manifest.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

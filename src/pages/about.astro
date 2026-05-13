@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import PageHero from '../components/layout/PageHero.astro';
+import SectionBlock from '../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout
+  title="About | Market Chronicle"
+  description="关于 Market Chronicle：一个可引用、可复核的双市场金融编年史项目。"
+  lang="zh-CN"
+>
+  <PageHero
+    title="About"
+    description="Market Chronicle 试图把“市场这段叙事”压缩到一屏：用对数坐标与估值周期作尺，用静态 panel + API 的方式提供可引用的研究页面。"
+  />
+
+  <div class="container">
+    <SectionBlock sectionNumber="1" title="这是什么">
+      <p class="text-editorial">
+        一个双市场编年史网站：<a href="/cn/">/cn/</a> 是中国 A 股编年史，<a href="/us/">/us/</a> 是美国股票市场编年史。
+        每个专题都对应一个可索引的静态 URL，并提供与之匹配的 JSON 数据接口。
+      </p>
+    </SectionBlock>
+
+    <SectionBlock sectionNumber="2" title="这不是什么">
+      <p class="text-editorial">
+        这不是交易信号生成器，也不是“炫技式 dashboard”。本项目优先回答结构性问题：长期回报形状、回撤节奏、估值锚点、集中度与结构变迁。
+      </p>
+    </SectionBlock>
+
+    <SectionBlock sectionNumber="3" title="如何引用">
+      <p class="text-editorial">
+        面向引用的最小单位是 panel：给出 URL 与 API 链接，并在页面提供图注/方法说明与数据来源。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>
+

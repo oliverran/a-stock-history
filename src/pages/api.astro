@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import PageHero from '../components/layout/PageHero.astro';
+import SectionBlock from '../components/layout/SectionBlock.astro';
+import { loadApiManifest, loadApiProfile } from '../lib/api/manifest';
+
+const manifest = await loadApiManifest().catch(() => null);
+const profile = await loadApiProfile().catch(() => null);
+
+const items = manifest?.items ?? [];
+const topItems = items.slice(0, 60);
+---
+
+<BaseLayout
+  title="API | Market Chronicle"
+  description="站点级静态 JSON API 索引：_manifest、profile，以及各 panel 对应的数据端点。"
+  lang="zh-CN"
+>
+  <PageHero
+    title="API Index"
+    description="所有图表数据以静态 JSON 形式对外暴露：无需鉴权、可跨域读取、可引用。"
+  />
+
+  <div class="container">
+    <SectionBlock sectionNumber="1" title="站点索引">
+      <ul class="text-editorial">
+        <li><a href="/api/_manifest.json" target="_blank">/api/_manifest.json</a></li>
+        <li><a href="/api/profile.json" target="_blank">/api/profile.json</a></li>
+      </ul>
+    </SectionBlock>
+
+    {profile && (
+      <SectionBlock sectionNumber="2" title="概览">
+        <ul class="text-editorial">
+          <li>Datasets: {profile.totals.count}</li>
+          <li>Total bytes: {profile.totals.bytes}</li>
+          <li>Generated at: {profile.generatedAt}</li>
+        </ul>
+      </SectionBlock>
+    )}
+
+    <SectionBlock sectionNumber="3" title="端点列表（节选）">
+      <p class="text-editorial">
+        完整列表请查看 <a href="/api/_manifest.json" target="_blank">_manifest</a>。
+      </p>
+      <div class="api-table">
+        <div class="api-row api-head">
+          <div>Key</div>
+          <div>Path</div>
+          <div>Modified</div>
+          <div>Bytes</div>
+        </div>
+        {topItems.map((it) => (
+          <div class="api-row">
+            <div class="mono">{it.key}</div>
+            <div class="mono"><a href={it.path} target="_blank">{it.path}</a></div>
+            <div class="mono">{it.modified}</div>
+            <div class="mono">{it.bytes}</div>
+          </div>
+        ))}
+      </div>
+    </SectionBlock>
+  </div>
+</BaseLayout>
+
+<style>
+  .api-table {
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .api-row {
+    display: grid;
+    grid-template-columns: 1.2fr 2.2fr 1.2fr 0.8fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs) 0;
+    border-top: 1px dashed var(--color-line);
+    align-items: baseline;
+  }
+  .api-head {
+    border-top: none;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--color-ink-light);
+    padding-top: 0;
+  }
+  .mono {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
+

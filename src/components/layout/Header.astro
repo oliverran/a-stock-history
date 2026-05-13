@@ -3,12 +3,13 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="site-branding">
-      <a href="/" class="brand-link">A股编年史</a>
+      <a href="/" class="brand-link">Market Chronicle</a>
     </div>
     <nav class="site-nav">
-      <a href="/broad/" class={Astro.url.pathname.startsWith('/broad') ? 'active' : ''}>Broad</a>
-      <a href="/sectors/" class={Astro.url.pathname.startsWith('/sectors') ? 'active' : ''}>Sectors</a>
-      <a href="/clusters/" class={Astro.url.pathname.startsWith('/clusters') ? 'active' : ''}>Clusters</a>
+      <a href="/cn/" class={Astro.url.pathname.startsWith('/cn') ? 'active' : ''}>CN</a>
+      <a href="/us/" class={Astro.url.pathname.startsWith('/us') ? 'active' : ''}>US</a>
+      <a href="/methodology" class={Astro.url.pathname.startsWith('/methodology') ? 'active' : ''}>Method</a>
+      <a href="/api" class={Astro.url.pathname.startsWith('/api') ? 'active' : ''}>API</a>
     </nav>
   </div>
 </header>

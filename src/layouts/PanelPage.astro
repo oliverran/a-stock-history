@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import PageHero from '../components/layout/PageHero.astro';
+import SectionBlock from '../components/layout/SectionBlock.astro';
+import ChartBox from '../components/charts/ChartBox.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  lead?: string;
+  apiEndpoint: string;
+  chartId: string;
+  chartTitle: string;
+  chartDescription?: string;
+  chartHeight?: string;
+  howToRead?: string;
+  keyFindings?: string[];
+  sources?: string[];
+  relatedPanels?: Array<{ href: string; title: string }>;
+  lastUpdated?: string;
+  lang?: string;
+  jsonLd?: any | any[];
+}
+
+const {
+  title,
+  description,
+  lead,
+  apiEndpoint,
+  chartId,
+  chartTitle,
+  chartDescription,
+  chartHeight,
+  howToRead,
+  keyFindings,
+  sources,
+  relatedPanels,
+  lastUpdated,
+  lang = 'zh-CN',
+  jsonLd,
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description} lang={lang} jsonLd={jsonLd} ogType="article">
+  <PageHero title={title} description={lead ?? description} lastUpdated={lastUpdated} />
+
+  <div class="container">
+    <ChartBox
+      id={chartId}
+      apiEndpoint={apiEndpoint}
+      title={chartTitle}
+      description={chartDescription}
+      height={chartHeight}
+    />
+
+    {(howToRead || (keyFindings && keyFindings.length > 0) || (sources && sources.length > 0)) && (
+      <div class="panel-notes">
+        {howToRead && (
+          <SectionBlock sectionNumber="1" title={lang === 'zh-CN' ? '图注 / 怎么看' : 'How to Read'}>
+            <p class="text-editorial">{howToRead}</p>
+          </SectionBlock>
+        )}
+
+        {keyFindings && keyFindings.length > 0 && (
+          <SectionBlock sectionNumber="2" title={lang === 'zh-CN' ? '关键发现' : 'Key Findings'}>
+            <ul class="text-editorial">
+              {keyFindings.map((it) => (
+                <li>{it}</li>
+              ))}
+            </ul>
+          </SectionBlock>
+        )}
+
+        {sources && sources.length > 0 && (
+          <SectionBlock sectionNumber="3" title={lang === 'zh-CN' ? '数据来源' : 'Sources'}>
+            <ul class="text-editorial">
+              {sources.map((it) => (
+                <li>{it}</li>
+              ))}
+            </ul>
+          </SectionBlock>
+        )}
+      </div>
+    )}
+
+    <SectionBlock sectionNumber="A" title={lang === 'zh-CN' ? 'API 数据' : 'API'}>
+      <p class="text-editorial">
+        <a href={apiEndpoint} target="_blank">Download JSON</a>
+      </p>
+    </SectionBlock>
+
+    {relatedPanels && relatedPanels.length > 0 && (
+      <SectionBlock sectionNumber="R" title={lang === 'zh-CN' ? '相关图表' : 'Related'}>
+        <ul class="text-editorial">
+          {relatedPanels.map((p) => (
+            <li><a href={p.href}>{p.title}</a></li>
+          ))}
+        </ul>
+      </SectionBlock>
+    )}
+  </div>
+</BaseLayout>
+

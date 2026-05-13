@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "id": "annual-returns",
+    "name": "Semiconductors Annual Returns",
+    "type": "bar",
+    "description": "Annual returns (%) (sample)"
+  },
+  "series": [
+    {
+      "date": "1993",
+      "value": -52.09
+    },
+    {
+      "date": "1994",
+      "value": -23.64
+    },
+    {
+      "date": "1995",
+      "value": 49.18
+    },
+    {
+      "date": "1996",
+      "value": -6.98
+    },
+    {
+      "date": "1997",
+      "value": 47.37
+    },
+    {
+      "date": "1998",
+      "value": 4.72
+    },
+    {
+      "date": "1999",
+      "value": 1.79
+    },
+    {
+      "date": "2000",
+      "value": -58.61
+    },
+    {
+      "date": "2001",
+      "value": 22.17
+    },
+    {
+      "date": "2002",
+      "value": 1.37
+    },
+    {
+      "date": "2003",
+      "value": 30.04
+    },
+    {
+      "date": "2004",
+      "value": 8.38
+    },
+    {
+      "date": "2005",
+      "value": -24.24
+    },
+    {
+      "date": "2006",
+      "value": 40.98
+    },
+    {
+      "date": "2007",
+      "value": -37.87
+    },
+    {
+      "date": "2008",
+      "value": 12.99
+    },
+    {
+      "date": "2009",
+      "value": 72.1
+    },
+    {
+      "date": "2010",
+      "value": 17.94
+    },
+    {
+      "date": "2011",
+      "value": 25.83
+    },
+    {
+      "date": "2012",
+      "value": -26.71
+    },
+    {
+      "date": "2013",
+      "value": -52.55
+    },
+    {
+      "date": "2014",
+      "value": -9.92
+    },
+    {
+      "date": "2015",
+      "value": 83.53
+    },
+    {
+      "date": "2016",
+      "value": -14.75
+    },
+    {
+      "date": "2017",
+      "value": 4.04
+    },
+    {
+      "date": "2018",
+      "value": -32.72
+    },
+    {
+      "date": "2019",
+      "value": -28.48
+    },
+    {
+      "date": "2020",
+      "value": 37.63
+    },
+    {
+      "date": "2021",
+      "value": 26.44
+    },
+    {
+      "date": "2022",
+      "value": 64.85
+    },
+    {
+      "date": "2023",
+      "value": 79.8
+    },
+    {
+      "date": "2024",
+      "value": -32.15
+    },
+    {
+      "date": "2025",
+      "value": -30.81
+    }
+  ]
+}

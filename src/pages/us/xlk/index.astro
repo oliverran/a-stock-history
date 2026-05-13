@@ -1,0 +1,34 @@
+---
+import HubPage from '../../../layouts/HubPage.astro';
+import { usXlkHub } from '../../../content/us/xlk';
+import { getLastModifiedForPrefix, loadApiManifest } from '../../../lib/api/manifest';
+
+const manifest = await loadApiManifest().catch(() => null);
+const lastUpdated = manifest ? getLastModifiedForPrefix(manifest, '/api/us/xlk') : undefined;
+
+const sections = usXlkHub.sections.map((s) => ({
+  sectionNumber: s.sectionNumber,
+  title: s.title,
+  description: s.description,
+  panels: s.panelKeys.map((k) => {
+    const p = usXlkHub.panels[k];
+    return {
+      href: `/us/xlk/${p.key}`,
+      title: p.title,
+      description: p.description,
+    };
+  }),
+}));
+---
+
+<HubPage
+  title={usXlkHub.title}
+  description={usXlkHub.description}
+  heroTitle={usXlkHub.heroTitle}
+  heroDescription={usXlkHub.heroDescription}
+  sections={sections}
+  related={usXlkHub.related}
+  lastUpdated={lastUpdated}
+  lang={usXlkHub.lang}
+/>
+

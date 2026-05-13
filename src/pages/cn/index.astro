@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import CardGrid from '../../components/layout/CardGrid.astro';
+import Card from '../../components/layout/Card.astro';
+---
+
+<BaseLayout
+  title="A股编年史 | Market Chronicle"
+  description="中国 A 股编年史：宽基、行业、抱团三条主线。"
+  lang="zh-CN"
+>
+  <PageHero
+    title="A股编年史"
+    description="把市场写成编年体：每张图回答一个问题，每个专题可引用、可复核、可追溯到 API。"
+  />
+
+  <div class="container">
+    <CardGrid>
+      <Card href="/cn/broad" title="宽基 / Broad" description="长期形状、年度回报、回撤名册、估值锚点与结构迁移。" />
+      <Card href="/cn/sectors" title="行业 / Sectors" description="轮动总图、行业估值对比与每个行业的独立专题页。" />
+      <Card href="/cn/clusters" title="抱团 / Clusters" description="集中度、相关性、谱系与典型抱团组合的历史样本。" />
+    </CardGrid>
+  </div>
+</BaseLayout>
+

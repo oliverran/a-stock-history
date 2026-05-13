@@ -6,58 +6,42 @@ import CardGrid from '../components/layout/CardGrid.astro';
 import Card from '../components/layout/Card.astro';
 ---
 
-<BaseLayout 
-  title="A股编年史 · The Chronicle of China A-Shares" 
-  description="一份关于中国 A 股市场的长周期编年体档案。记录市场的长期形状、行业轮动与抱团叙事。"
+<BaseLayout
+  title="Market Chronicle | A股编年史 & U.S. Market Chronicle"
+  description="双市场金融编年史：/cn/ 中国 A 股，/us/ 美国股票市场。每个专题可引用、可复核、可追溯到 API。"
+  lang="zh-CN"
 >
   <PageHero 
-    title="A股编年史" 
-    description="一份关于中国 A 股市场的长周期编年体档案。用宽基指数记录市场的长期形状，用行业指数记录轮动与风格迁移，用抱团叙事记录不同阶段的共识资产如何形成、扩张和退潮。"
+    title="Market Chronicle"
+    description="把市场写成编年体，而不是导航页：每张图回答一个明确问题，每个 panel 有独立 URL 与 API。"
     lastUpdated={new Date().toISOString().split('T')[0]}
   />
 
   <SectionBlock 
-    sectionNumber="I" 
-    title="The Market / 宽基与时代" 
-    description="市场是一个复杂的非线性系统，但拉长周期，依然能看到清晰的估值钟摆与时代分幕。本章通过各大宽基指数及历史回撤数据，刻画 A 股的总体形貌。"
+    sectionNumber="I"
+    title="China A-Shares / CN"
+    description="中国 A 股编年史：宽基、行业、抱团三条主线。"
   >
     <CardGrid>
-      <Card href="/broad/shanghai-composite" title="上证综指" description="A 股市场的起点与最广泛的代表。" />
-      <Card href="/broad/hs300" title="沪深 300" description="核心资产的压舱石，反映大盘蓝筹的兴衰。" />
-      <Card href="/broad/eras" title="六时代" description="从草莽时代到机构化时代，市场的阶段性特征。" />
-      <Card href="/broad/drawdown" title="回撤名册" description="历次大级别熊市的深度与修复周期考证。" />
-      <Card href="/broad/" title="Explore Broad →" description="查看全部 12 张宽基图表" />
+      <Card href="/cn/" title="进入 /cn/ →" description="A 股线入口与总览。" />
+      <Card href="/cn/broad" title="宽基 / Broad" description="长期形状、年度回报、回撤名册、估值锚点与结构迁移。" />
+      <Card href="/cn/sectors" title="行业 / Sectors" description="轮动总图、行业估值对比与每个行业的独立专题页。" />
+      <Card href="/cn/clusters" title="抱团 / Clusters" description="集中度、相关性、谱系与典型抱团组合的历史样本。" />
     </CardGrid>
   </SectionBlock>
 
   <hr class="divider container" />
 
   <SectionBlock 
-    sectionNumber="II" 
-    title="The Sectors / 行业与轮动" 
-    description="存量博弈下，资金在不同产业间如同潮汐般涌动。本章追踪白酒、新能源、半导体等七大核心赛道的周期起伏。"
+    sectionNumber="II"
+    title="U.S. Market / US"
+    description="美国市场编年史：世纪尺度、估值周期、回撤名册与集中度。"
   >
     <CardGrid>
-      <Card href="/sectors/baijiu" title="白酒" description="从周期品到消费品的估值重塑。" />
-      <Card href="/sectors/new-energy" title="新能源" description="碳中和叙事下的超级贝塔与产能出清。" />
-      <Card href="/sectors/rotation" title="轮动总图" description="板块间跷跷板效应与资金迁移轨迹。" />
-      <Card href="/sectors/" title="Explore Sectors →" description="查看全部 9 张行业图表" />
-    </CardGrid>
-  </SectionBlock>
-
-  <hr class="divider container" />
-
-  <SectionBlock 
-    sectionNumber="III" 
-    title="The Clusters / 抱团与共识" 
-    description="每一次大牛市的背后，都有一套逻辑自洽的宏大叙事。本章记录历代抱团资产的聚变与裂变。"
-  >
-    <CardGrid>
-      <Card href="/clusters/liquor-club" title="茅指数" description="核心资产与外资定价权时代的象征。" />
-      <Card href="/clusters/ning-combo" title="宁组合" description="高景气度与 PEG 估值法的极致演绎。" />
-      <Card href="/clusters/special-valuation" title="中特估" description="低估值、高股息与国家意志的结合。" />
-      <Card href="/clusters/ai-compute" title="AI 算力" description="通用人工智能时代的算力基建叙事。" />
-      <Card href="/clusters/" title="Explore Clusters →" description="查看全部 8 张抱团图表" />
+      <Card href="/us/" title="Enter /us/ →" description="U.S. 线入口与总览。" />
+      <Card href="/us/sp500" title="S&P 500" description="Century scale, annual outcomes, drawdowns, valuation anchors." />
+      <Card href="/us/nasdaq" title="Nasdaq" description="Composite lens, drawdowns, valuation, concentration." />
+      <Card href="/us/mag7" title="Mag7" description="Concentration, contribution and crowding proxies." />
     </CardGrid>
   </SectionBlock>
 

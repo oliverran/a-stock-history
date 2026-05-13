@@ -1,0 +1,65 @@
+---
+import PanelPage from '../../../layouts/PanelPage.astro';
+import { cnBroadHub } from '../../../content/cn/broad';
+import { formatISODate } from '../../../lib/formatting/date';
+import { loadApiManifest } from '../../../lib/api/manifest';
+import { buildArticleJsonLd, buildDatasetJsonLd } from '../../../lib/seo/jsonld';
+import { toAbsoluteUrl } from '../../../lib/seo/urls';
+
+export function getStaticPaths() {
+  return Object.keys(cnBroadHub.panels).map((panel) => ({ params: { panel } }));
+}
+
+const { panel } = Astro.params;
+const def = cnBroadHub.panels[panel];
+
+const manifest = await loadApiManifest().catch(() => null);
+const item = manifest?.items.find((it) => it.path === def.apiPath);
+const modified = item?.modified;
+const lastUpdated = modified ? formatISODate(modified) : undefined;
+
+const site = Astro.site ? new URL(Astro.site) : undefined;
+const canonicalUrl = toAbsoluteUrl(Astro.url.pathname, site);
+const apiUrl = toAbsoluteUrl(def.apiPath, site);
+
+const jsonLd = [
+  buildArticleJsonLd({
+    title: `${def.title} | A股编年史`,
+    description: def.description,
+    canonicalUrl,
+    language: cnBroadHub.lang,
+    modified: modified ? formatISODate(modified) : undefined,
+  }),
+  buildDatasetJsonLd({
+    name: def.chart.title,
+    description: def.description,
+    apiUrl,
+    canonicalUrl,
+    modified: modified ? formatISODate(modified) : undefined,
+  }),
+];
+
+const relatedPanels = def.relatedKeys
+  ?.map((k) => cnBroadHub.panels[k])
+  .filter(Boolean)
+  .map((p) => ({ href: `/cn/broad/${p.key}`, title: p.title }));
+---
+
+<PanelPage
+  title={`${def.title} | A股编年史`}
+  description={def.description}
+  lead={def.lead}
+  apiEndpoint={def.apiPath}
+  chartId={def.chart.id}
+  chartTitle={def.chart.title}
+  chartDescription={def.chart.description}
+  chartHeight={def.chart.height}
+  howToRead={def.howToRead}
+  keyFindings={def.keyFindings}
+  sources={def.sources}
+  relatedPanels={relatedPanels}
+  lastUpdated={lastUpdated}
+  lang={cnBroadHub.lang}
+  jsonLd={jsonLd}
+/>
+

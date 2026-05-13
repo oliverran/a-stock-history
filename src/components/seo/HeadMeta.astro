@@ -1,10 +1,16 @@
 ---
+import { DEFAULT_OG_IMAGE_PATH, getSiteDisplayName } from '../../lib/seo/site';
+import { toAbsoluteUrl } from '../../lib/seo/urls';
+
 export interface Props {
   title: string;
   description: string;
   canonicalUrl?: string;
   ogType?: string;
   ogImage?: string;
+  lang?: string;
+  jsonLd?: any | any[];
+  twitterSite?: string;
 }
 
 const { 
@@ -12,16 +18,35 @@ const {
   description, 
   canonicalUrl = Astro.url.href, 
   ogType = 'website',
-  ogImage = '/api/og.png' // placeholder
+  ogImage = DEFAULT_OG_IMAGE_PATH,
+  lang = 'zh-CN',
+  jsonLd,
+  twitterSite
 } = Astro.props;
 
-const jsonLd = {
+const site = Astro.site ? new URL(Astro.site) : undefined;
+const canonicalAbs = toAbsoluteUrl(canonicalUrl, site);
+const ogImageAbs = toAbsoluteUrl(ogImage, site);
+
+const baseJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": title,
   "description": description,
-  "url": canonicalUrl
+  "url": canonicalAbs,
+  "inLanguage": lang,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": getSiteDisplayName(lang === 'zh-CN' ? 'zh-CN' : 'en'),
+    "url": site?.toString()
+  }
 };
+
+const jsonLdPayload = Array.isArray(jsonLd)
+  ? [baseJsonLd, ...jsonLd]
+  : jsonLd
+    ? [baseJsonLd, jsonLd]
+    : [baseJsonLd];
 ---
 
 <head>
@@ -29,25 +54,28 @@ const jsonLd = {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  <meta name="color-scheme" content="light" />
   
-  <link rel="canonical" href={canonicalUrl} />
+  <link rel="canonical" href={canonicalAbs} />
   
   <!-- Open Graph -->
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content={ogType} />
-  <meta property="og:url" content={canonicalUrl} />
-  <meta property="og:image" content={ogImage} />
+  <meta property="og:url" content={canonicalAbs} />
+  <meta property="og:image" content={ogImageAbs} />
+  <meta property="og:site_name" content={getSiteDisplayName(lang === 'zh-CN' ? 'zh-CN' : 'en')} />
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image" content={ogImageAbs} />
+  {twitterSite && <meta name="twitter:site" content={twitterSite} />}
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- JSON-LD -->
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPayload)} />
 </head>

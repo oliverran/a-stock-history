@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "century",
+    "name": "S&P 500",
+    "type": "line",
+    "description": "Century-scale price (sample)"
+  },
+  "series": []
+}

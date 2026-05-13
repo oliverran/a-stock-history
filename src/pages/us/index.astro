@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import CardGrid from '../../components/layout/CardGrid.astro';
+import Card from '../../components/layout/Card.astro';
+---
+
+<BaseLayout
+  title="U.S. Market Chronicle | Market Chronicle"
+  description="U.S. Market Chronicle: S&P 500, Nasdaq, Dow, Semis, XLK, Financials, Mag7."
+  lang="en"
+>
+  <PageHero
+    title="U.S. Market Chronicle"
+    description="A research-first market chronicle: every panel has a static URL, an API endpoint, and a short methodology note."
+  />
+
+  <div class="container">
+    <CardGrid>
+      <Card href="/us/sp500" title="S&P 500" description="Century scale, annual outcomes, drawdowns, valuation anchors." />
+      <Card href="/us/nasdaq" title="Nasdaq" description="Composite lens, bubble echoes, concentration and valuation." />
+      <Card href="/us/dow" title="Dow Jones" description="Legacy benchmark, long-run shape and drawdown catalog." />
+      <Card href="/us/semi" title="Semiconductors" description="Cycle overlays, drawdowns, valuation anchors." />
+      <Card href="/us/xlk" title="Technology (XLK)" description="Sector lens, weighting shifts and concentration." />
+      <Card href="/us/fin" title="Financials (XLF)" description="Rates-sensitive lens, drawdowns and valuation." />
+      <Card href="/us/mag7" title="Mag7" description="Concentration, contribution and crowding proxies." />
+    </CardGrid>
+  </div>
+</BaseLayout>
+

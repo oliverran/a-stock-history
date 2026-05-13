@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "drawdowns",
+    "name": "S&P 500 Drawdowns",
+    "type": "drawdown",
+    "description": "Drawdowns from peak (%) (sample)"
+  },
+  "series": []
+}

@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "century",
+    "name": "Dow Jones",
+    "type": "line",
+    "description": "Century-scale price (sample)"
+  },
+  "series": []
+}

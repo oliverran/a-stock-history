@@ -7,14 +7,19 @@ import '../../styles/global.css';
 export interface Props {
   title: string;
   description: string;
+  canonicalUrl?: string;
+  ogType?: string;
+  ogImage?: string;
+  lang?: string;
+  jsonLd?: any | any[];
 }
 
-const { title, description } = Astro.props;
+const { title, description, canonicalUrl, ogType, ogImage, lang = 'zh-CN', jsonLd } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <HeadMeta title={title} description={description} />
+<html lang={lang}>
+  <HeadMeta title={title} description={description} canonicalUrl={canonicalUrl} ogType={ogType} ogImage={ogImage} lang={lang} jsonLd={jsonLd} />
   <body>
     <Header />
     <main>

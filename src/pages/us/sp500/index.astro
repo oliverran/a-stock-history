@@ -1,0 +1,34 @@
+---
+import HubPage from '../../../layouts/HubPage.astro';
+import { usSp500Hub } from '../../../content/us/sp500';
+import { getLastModifiedForPrefix, loadApiManifest } from '../../../lib/api/manifest';
+
+const manifest = await loadApiManifest().catch(() => null);
+const lastUpdated = manifest ? getLastModifiedForPrefix(manifest, '/api/us/sp500') : undefined;
+
+const sections = usSp500Hub.sections.map((s) => ({
+  sectionNumber: s.sectionNumber,
+  title: s.title,
+  description: s.description,
+  panels: s.panelKeys.map((k) => {
+    const p = usSp500Hub.panels[k];
+    return {
+      href: `/us/sp500/${p.key}`,
+      title: p.title,
+      description: p.description,
+    };
+  }),
+}));
+---
+
+<HubPage
+  title={usSp500Hub.title}
+  description={usSp500Hub.description}
+  heroTitle={usSp500Hub.heroTitle}
+  heroDescription={usSp500Hub.heroDescription}
+  sections={sections}
+  related={usSp500Hub.related}
+  lastUpdated={lastUpdated}
+  lang={usSp500Hub.lang}
+/>
+

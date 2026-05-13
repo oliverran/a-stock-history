@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "index",
+    "name": "Mag7 Composite",
+    "type": "line",
+    "description": "Composite price (sample)"
+  },
+  "series": []
+}

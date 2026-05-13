@@ -1,9 +1,433 @@
 {
-  "version": "1.0.0",
-  "lastUpdated": "2026-05-13T04:16:47.372Z",
-  "endpoints": {
-    "broad": "/api/broad/",
-    "sectors": "/api/sectors/",
-    "clusters": "/api/clusters/"
-  }
+  "version": "2.0.0",
+  "generatedAt": "2026-05-13T06:28:10.636Z",
+  "items": [
+    {
+      "key": "cn/broad/annual",
+      "path": "/api/cn/broad/annual.json",
+      "url": "/api/cn/broad/annual.json",
+      "modified": "2026-05-13T05:26:59.900Z",
+      "bytes": 1309
+    },
+    {
+      "key": "cn/broad/chinext",
+      "path": "/api/cn/broad/chinext.json",
+      "url": "/api/cn/broad/chinext.json",
+      "modified": "2026-05-13T05:26:59.901Z",
+      "bytes": 145663
+    },
+    {
+      "key": "cn/broad/csi500",
+      "path": "/api/cn/broad/csi500.json",
+      "url": "/api/cn/broad/csi500.json",
+      "modified": "2026-05-13T05:26:59.903Z",
+      "bytes": 192584
+    },
+    {
+      "key": "cn/broad/davis-decomposition",
+      "path": "/api/cn/broad/davis-decomposition.json",
+      "url": "/api/cn/broad/davis-decomposition.json",
+      "modified": "2026-05-13T05:26:59.904Z",
+      "bytes": 1631
+    },
+    {
+      "key": "cn/broad/distribution",
+      "path": "/api/cn/broad/distribution.json",
+      "url": "/api/cn/broad/distribution.json",
+      "modified": "2026-05-13T05:26:59.904Z",
+      "bytes": 536
+    },
+    {
+      "key": "cn/broad/drawdown",
+      "path": "/api/cn/broad/drawdown.json",
+      "url": "/api/cn/broad/drawdown.json",
+      "modified": "2026-05-13T05:26:59.905Z",
+      "bytes": 187900
+    },
+    {
+      "key": "cn/broad/eras",
+      "path": "/api/cn/broad/eras.json",
+      "url": "/api/cn/broad/eras.json",
+      "modified": "2026-05-13T05:26:59.907Z",
+      "bytes": 242560
+    },
+    {
+      "key": "cn/broad/hs300",
+      "path": "/api/cn/broad/hs300.json",
+      "url": "/api/cn/broad/hs300.json",
+      "modified": "2026-05-13T05:26:59.908Z",
+      "bytes": 193769
+    },
+    {
+      "key": "cn/broad/intrayear-turbulence",
+      "path": "/api/cn/broad/intrayear-turbulence.json",
+      "url": "/api/cn/broad/intrayear-turbulence.json",
+      "modified": "2026-05-13T05:26:59.908Z",
+      "bytes": 1458
+    },
+    {
+      "key": "cn/broad/roe-anchor",
+      "path": "/api/cn/broad/roe-anchor.json",
+      "url": "/api/cn/broad/roe-anchor.json",
+      "modified": "2026-05-13T05:26:59.909Z",
+      "bytes": 1041
+    },
+    {
+      "key": "cn/broad/seasonality",
+      "path": "/api/cn/broad/seasonality.json",
+      "url": "/api/cn/broad/seasonality.json",
+      "modified": "2026-05-13T05:26:59.909Z",
+      "bytes": 11036
+    },
+    {
+      "key": "cn/broad/sector-evolution",
+      "path": "/api/cn/broad/sector-evolution.json",
+      "url": "/api/cn/broad/sector-evolution.json",
+      "modified": "2026-05-13T05:26:59.909Z",
+      "bytes": 1983
+    },
+    {
+      "key": "cn/broad/shanghai-composite",
+      "path": "/api/cn/broad/shanghai-composite.json",
+      "url": "/api/cn/broad/shanghai-composite.json",
+      "modified": "2026-05-13T05:26:59.910Z",
+      "bytes": 242530
+    },
+    {
+      "key": "cn/broad/shenzhen-component",
+      "path": "/api/cn/broad/shenzhen-component.json",
+      "url": "/api/cn/broad/shenzhen-component.json",
+      "modified": "2026-05-13T05:26:59.911Z",
+      "bytes": 242360
+    },
+    {
+      "key": "cn/broad/star50",
+      "path": "/api/cn/broad/star50.json",
+      "url": "/api/cn/broad/star50.json",
+      "modified": "2026-05-13T05:26:59.912Z",
+      "bytes": 48031
+    },
+    {
+      "key": "cn/broad/style-ratios",
+      "path": "/api/cn/broad/style-ratios.json",
+      "url": "/api/cn/broad/style-ratios.json",
+      "modified": "2026-05-13T05:26:59.913Z",
+      "bytes": 139102
+    },
+    {
+      "key": "cn/broad/valuation",
+      "path": "/api/cn/broad/valuation.json",
+      "url": "/api/cn/broad/valuation.json",
+      "modified": "2026-05-13T05:26:59.914Z",
+      "bytes": 269837
+    },
+    {
+      "key": "cn/broad/volatility",
+      "path": "/api/cn/broad/volatility.json",
+      "url": "/api/cn/broad/volatility.json",
+      "modified": "2026-05-13T05:26:59.915Z",
+      "bytes": 141305
+    },
+    {
+      "key": "cn/clusters/ai-compute",
+      "path": "/api/cn/clusters/ai-compute.json",
+      "url": "/api/cn/clusters/ai-compute.json",
+      "modified": "2026-05-13T05:26:59.916Z",
+      "bytes": 24166
+    },
+    {
+      "key": "cn/clusters/concentration",
+      "path": "/api/cn/clusters/concentration.json",
+      "url": "/api/cn/clusters/concentration.json",
+      "modified": "2026-05-13T05:26:59.917Z",
+      "bytes": 188361
+    },
+    {
+      "key": "cn/clusters/correlation",
+      "path": "/api/cn/clusters/correlation.json",
+      "url": "/api/cn/clusters/correlation.json",
+      "modified": "2026-05-13T05:26:59.918Z",
+      "bytes": 185645
+    },
+    {
+      "key": "cn/clusters/liquor-club",
+      "path": "/api/cn/clusters/liquor-club.json",
+      "url": "/api/cn/clusters/liquor-club.json",
+      "modified": "2026-05-13T05:26:59.918Z",
+      "bytes": 145387
+    },
+    {
+      "key": "cn/clusters/ning-combo",
+      "path": "/api/cn/clusters/ning-combo.json",
+      "url": "/api/cn/clusters/ning-combo.json",
+      "modified": "2026-05-13T05:26:59.919Z",
+      "bytes": 97029
+    },
+    {
+      "key": "cn/clusters/predecessors",
+      "path": "/api/cn/clusters/predecessors.json",
+      "url": "/api/cn/clusters/predecessors.json",
+      "modified": "2026-05-13T05:26:59.920Z",
+      "bytes": 94969
+    },
+    {
+      "key": "cn/clusters/special-valuation",
+      "path": "/api/cn/clusters/special-valuation.json",
+      "url": "/api/cn/clusters/special-valuation.json",
+      "modified": "2026-05-13T05:26:59.920Z",
+      "bytes": 48624
+    },
+    {
+      "key": "cn/sectors/ai",
+      "path": "/api/cn/sectors/ai.json",
+      "url": "/api/cn/sectors/ai.json",
+      "modified": "2026-05-13T05:26:59.922Z",
+      "bytes": 95825
+    },
+    {
+      "key": "cn/sectors/baijiu",
+      "path": "/api/cn/sectors/baijiu.json",
+      "url": "/api/cn/sectors/baijiu.json",
+      "modified": "2026-05-13T05:26:59.923Z",
+      "bytes": 145655
+    },
+    {
+      "key": "cn/sectors/banks",
+      "path": "/api/cn/sectors/banks.json",
+      "url": "/api/cn/sectors/banks.json",
+      "modified": "2026-05-13T05:26:59.924Z",
+      "bytes": 193657
+    },
+    {
+      "key": "cn/sectors/new-energy",
+      "path": "/api/cn/sectors/new-energy.json",
+      "url": "/api/cn/sectors/new-energy.json",
+      "modified": "2026-05-13T05:26:59.937Z",
+      "bytes": 119624
+    },
+    {
+      "key": "cn/sectors/pharma",
+      "path": "/api/cn/sectors/pharma.json",
+      "url": "/api/cn/sectors/pharma.json",
+      "modified": "2026-05-13T05:26:59.938Z",
+      "bytes": 194073
+    },
+    {
+      "key": "cn/sectors/property",
+      "path": "/api/cn/sectors/property.json",
+      "url": "/api/cn/sectors/property.json",
+      "modified": "2026-05-13T05:26:59.939Z",
+      "bytes": 194029
+    },
+    {
+      "key": "cn/sectors/rotation",
+      "path": "/api/cn/sectors/rotation.json",
+      "url": "/api/cn/sectors/rotation.json",
+      "modified": "2026-05-13T05:26:59.940Z",
+      "bytes": 148552
+    },
+    {
+      "key": "cn/sectors/sector-valuation",
+      "path": "/api/cn/sectors/sector-valuation.json",
+      "url": "/api/cn/sectors/sector-valuation.json",
+      "modified": "2026-05-13T05:26:59.940Z",
+      "bytes": 621
+    },
+    {
+      "key": "cn/sectors/semi",
+      "path": "/api/cn/sectors/semi.json",
+      "url": "/api/cn/sectors/semi.json",
+      "modified": "2026-05-13T05:26:59.942Z",
+      "bytes": 121367
+    },
+    {
+      "key": "us/dow/annual-returns",
+      "path": "/api/us/dow/annual-returns.json",
+      "url": "/api/us/dow/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.599Z",
+      "bytes": 5665
+    },
+    {
+      "key": "us/dow/century",
+      "path": "/api/us/dow/century.json",
+      "url": "/api/us/dow/century.json",
+      "modified": "2026-05-13T06:28:10.597Z",
+      "bytes": 151
+    },
+    {
+      "key": "us/dow/drawdowns",
+      "path": "/api/us/dow/drawdowns.json",
+      "url": "/api/us/dow/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.599Z",
+      "bytes": 165
+    },
+    {
+      "key": "us/dow/valuation",
+      "path": "/api/us/dow/valuation.json",
+      "url": "/api/us/dow/valuation.json",
+      "modified": "2026-05-13T06:28:10.600Z",
+      "bytes": 136056
+    },
+    {
+      "key": "us/fin/annual-returns",
+      "path": "/api/us/fin/annual-returns.json",
+      "url": "/api/us/fin/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.618Z",
+      "bytes": 1681
+    },
+    {
+      "key": "us/fin/drawdowns",
+      "path": "/api/us/fin/drawdowns.json",
+      "url": "/api/us/fin/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.620Z",
+      "bytes": 86948
+    },
+    {
+      "key": "us/fin/price",
+      "path": "/api/us/fin/price.json",
+      "url": "/api/us/fin/price.json",
+      "modified": "2026-05-13T06:28:10.618Z",
+      "bytes": 86774
+    },
+    {
+      "key": "us/fin/valuation",
+      "path": "/api/us/fin/valuation.json",
+      "url": "/api/us/fin/valuation.json",
+      "modified": "2026-05-13T06:28:10.620Z",
+      "bytes": 72434
+    },
+    {
+      "key": "us/mag7/drawdowns",
+      "path": "/api/us/mag7/drawdowns.json",
+      "url": "/api/us/mag7/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.623Z",
+      "bytes": 166
+    },
+    {
+      "key": "us/mag7/index",
+      "path": "/api/us/mag7/index.json",
+      "url": "/api/us/mag7/index.json",
+      "modified": "2026-05-13T06:28:10.623Z",
+      "bytes": 150
+    },
+    {
+      "key": "us/mag7/valuation",
+      "path": "/api/us/mag7/valuation.json",
+      "url": "/api/us/mag7/valuation.json",
+      "modified": "2026-05-13T06:28:10.624Z",
+      "bytes": 55320
+    },
+    {
+      "key": "us/nasdaq/annual-returns",
+      "path": "/api/us/nasdaq/annual-returns.json",
+      "url": "/api/us/nasdaq/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.592Z",
+      "bytes": 3254
+    },
+    {
+      "key": "us/nasdaq/composite",
+      "path": "/api/us/nasdaq/composite.json",
+      "url": "/api/us/nasdaq/composite.json",
+      "modified": "2026-05-13T06:28:10.591Z",
+      "bytes": 137271
+    },
+    {
+      "key": "us/nasdaq/drawdowns",
+      "path": "/api/us/nasdaq/drawdowns.json",
+      "url": "/api/us/nasdaq/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.593Z",
+      "bytes": 136881
+    },
+    {
+      "key": "us/nasdaq/valuation",
+      "path": "/api/us/nasdaq/valuation.json",
+      "url": "/api/us/nasdaq/valuation.json",
+      "modified": "2026-05-13T06:28:10.593Z",
+      "bytes": 102168
+    },
+    {
+      "key": "us/semi/annual-returns",
+      "path": "/api/us/semi/annual-returns.json",
+      "url": "/api/us/semi/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.605Z",
+      "bytes": 2031
+    },
+    {
+      "key": "us/semi/drawdowns",
+      "path": "/api/us/semi/drawdowns.json",
+      "url": "/api/us/semi/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.606Z",
+      "bytes": 100276
+    },
+    {
+      "key": "us/semi/price",
+      "path": "/api/us/semi/price.json",
+      "url": "/api/us/semi/price.json",
+      "modified": "2026-05-13T06:28:10.605Z",
+      "bytes": 99149
+    },
+    {
+      "key": "us/semi/valuation",
+      "path": "/api/us/semi/valuation.json",
+      "url": "/api/us/semi/valuation.json",
+      "modified": "2026-05-13T06:28:10.607Z",
+      "bytes": 76496
+    },
+    {
+      "key": "us/sp500/annual-returns",
+      "path": "/api/us/sp500/annual-returns.json",
+      "url": "/api/us/sp500/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.583Z",
+      "bytes": 5655
+    },
+    {
+      "key": "us/sp500/century",
+      "path": "/api/us/sp500/century.json",
+      "url": "/api/us/sp500/century.json",
+      "modified": "2026-05-13T06:28:10.582Z",
+      "bytes": 149
+    },
+    {
+      "key": "us/sp500/drawdowns",
+      "path": "/api/us/sp500/drawdowns.json",
+      "url": "/api/us/sp500/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.583Z",
+      "bytes": 169
+    },
+    {
+      "key": "us/sp500/valuation",
+      "path": "/api/us/sp500/valuation.json",
+      "url": "/api/us/sp500/valuation.json",
+      "modified": "2026-05-13T06:28:10.585Z",
+      "bytes": 136042
+    },
+    {
+      "key": "us/xlk/annual-returns",
+      "path": "/api/us/xlk/annual-returns.json",
+      "url": "/api/us/xlk/annual-returns.json",
+      "modified": "2026-05-13T06:28:10.612Z",
+      "bytes": 1683
+    },
+    {
+      "key": "us/xlk/drawdowns",
+      "path": "/api/us/xlk/drawdowns.json",
+      "url": "/api/us/xlk/drawdowns.json",
+      "modified": "2026-05-13T06:28:10.613Z",
+      "bytes": 86524
+    },
+    {
+      "key": "us/xlk/price",
+      "path": "/api/us/xlk/price.json",
+      "url": "/api/us/xlk/price.json",
+      "modified": "2026-05-13T06:28:10.611Z",
+      "bytes": 86784
+    },
+    {
+      "key": "us/xlk/valuation",
+      "path": "/api/us/xlk/valuation.json",
+      "url": "/api/us/xlk/valuation.json",
+      "modified": "2026-05-13T06:28:10.613Z",
+      "bytes": 72446
+    }
+  ]
 }

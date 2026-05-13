@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "drawdowns",
+    "name": "Dow Drawdowns",
+    "type": "drawdown",
+    "description": "Drawdowns from peak (%) (sample)"
+  },
+  "series": []
+}

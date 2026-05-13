@@ -1,0 +1,70 @@
+{
+  "site": "Market Chronicle",
+  "generatedAt": "2026-05-13T06:28:10.636Z",
+  "markets": [
+    {
+      "market": "cn",
+      "modules": [
+        {
+          "module": "broad",
+          "count": 18,
+          "lastModified": "2026-05-13T05:26:59.915Z"
+        },
+        {
+          "module": "clusters",
+          "count": 7,
+          "lastModified": "2026-05-13T05:26:59.920Z"
+        },
+        {
+          "module": "sectors",
+          "count": 9,
+          "lastModified": "2026-05-13T05:26:59.942Z"
+        }
+      ]
+    },
+    {
+      "market": "us",
+      "modules": [
+        {
+          "module": "dow",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.600Z"
+        },
+        {
+          "module": "fin",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.620Z"
+        },
+        {
+          "module": "mag7",
+          "count": 3,
+          "lastModified": "2026-05-13T06:28:10.624Z"
+        },
+        {
+          "module": "nasdaq",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.593Z"
+        },
+        {
+          "module": "semi",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.607Z"
+        },
+        {
+          "module": "sp500",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.585Z"
+        },
+        {
+          "module": "xlk",
+          "count": 4,
+          "lastModified": "2026-05-13T06:28:10.613Z"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "count": 61,
+    "bytes": 5554707
+  }
+}

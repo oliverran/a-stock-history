@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import PageHero from '../components/layout/PageHero.astro';
+import SectionBlock from '../components/layout/SectionBlock.astro';
+import CardGrid from '../components/layout/CardGrid.astro';
+import Card from '../components/layout/Card.astro';
+import { formatISODate } from '../lib/formatting/date';
+
+export type HubSection = {
+  sectionNumber: string;
+  title: string;
+  description?: string;
+  panels: Array<{
+    href: string;
+    title: string;
+    description: string;
+  }>;
+};
+
+export interface Props {
+  title: string;
+  description: string;
+  heroTitle: string;
+  heroDescription: string;
+  sections: HubSection[];
+  related?: Array<{ href: string; title: string; description?: string }>;
+  lastUpdated?: string;
+  lang?: string;
+  jsonLd?: any | any[];
+}
+
+const { title, description, heroTitle, heroDescription, sections, related, lastUpdated, lang = 'zh-CN', jsonLd } = Astro.props;
+const updated = lastUpdated ? formatISODate(lastUpdated) : undefined;
+---
+
+<BaseLayout title={title} description={description} lang={lang} jsonLd={jsonLd}>
+  <PageHero title={heroTitle} description={heroDescription} lastUpdated={updated} />
+
+  <div class="container">
+    {sections.map((s) => (
+      <SectionBlock sectionNumber={s.sectionNumber} title={s.title}>
+        {s.description && <p class="text-editorial">{s.description}</p>}
+        <CardGrid>
+          {s.panels.map((p) => (
+            <Card href={p.href} title={p.title} description={p.description} />
+          ))}
+        </CardGrid>
+      </SectionBlock>
+    ))}
+
+    {related && related.length > 0 && (
+      <SectionBlock sectionNumber="R" title={lang === 'zh-CN' ? '相关专题' : 'Related'}>
+        <CardGrid>
+          {related.map((r) => (
+            <Card href={r.href} title={r.title} description={r.description ?? ''} />
+          ))}
+        </CardGrid>
+      </SectionBlock>
+    )}
+  </div>
+</BaseLayout>
+

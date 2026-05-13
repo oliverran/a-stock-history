@@ -1,0 +1,34 @@
+---
+import HubPage from '../../../layouts/HubPage.astro';
+import { usNasdaqHub } from '../../../content/us/nasdaq';
+import { getLastModifiedForPrefix, loadApiManifest } from '../../../lib/api/manifest';
+
+const manifest = await loadApiManifest().catch(() => null);
+const lastUpdated = manifest ? getLastModifiedForPrefix(manifest, '/api/us/nasdaq') : undefined;
+
+const sections = usNasdaqHub.sections.map((s) => ({
+  sectionNumber: s.sectionNumber,
+  title: s.title,
+  description: s.description,
+  panels: s.panelKeys.map((k) => {
+    const p = usNasdaqHub.panels[k];
+    return {
+      href: `/us/nasdaq/${p.key}`,
+      title: p.title,
+      description: p.description,
+    };
+  }),
+}));
+---
+
+<HubPage
+  title={usNasdaqHub.title}
+  description={usNasdaqHub.description}
+  heroTitle={usNasdaqHub.heroTitle}
+  heroDescription={usNasdaqHub.heroDescription}
+  sections={sections}
+  related={usNasdaqHub.related}
+  lastUpdated={lastUpdated}
+  lang={usNasdaqHub.lang}
+/>
+

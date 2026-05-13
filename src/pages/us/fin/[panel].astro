@@ -1,0 +1,65 @@
+---
+import PanelPage from '../../../layouts/PanelPage.astro';
+import { usFinHub } from '../../../content/us/fin';
+import { formatISODate } from '../../../lib/formatting/date';
+import { loadApiManifest } from '../../../lib/api/manifest';
+import { buildArticleJsonLd, buildDatasetJsonLd } from '../../../lib/seo/jsonld';
+import { toAbsoluteUrl } from '../../../lib/seo/urls';
+
+export function getStaticPaths() {
+  return Object.keys(usFinHub.panels).map((panel) => ({ params: { panel } }));
+}
+
+const { panel } = Astro.params;
+const def = usFinHub.panels[panel];
+
+const manifest = await loadApiManifest().catch(() => null);
+const item = manifest?.items.find((it) => it.path === def.apiPath);
+const modified = item?.modified;
+const lastUpdated = modified ? formatISODate(modified) : undefined;
+
+const site = Astro.site ? new URL(Astro.site) : undefined;
+const canonicalUrl = toAbsoluteUrl(Astro.url.pathname, site);
+const apiUrl = toAbsoluteUrl(def.apiPath, site);
+
+const jsonLd = [
+  buildArticleJsonLd({
+    title: def.title,
+    description: def.description,
+    canonicalUrl,
+    language: usFinHub.lang,
+    modified: modified ? formatISODate(modified) : undefined,
+  }),
+  buildDatasetJsonLd({
+    name: def.chart.title,
+    description: def.description,
+    apiUrl,
+    canonicalUrl,
+    modified: modified ? formatISODate(modified) : undefined,
+  }),
+];
+
+const relatedPanels = def.relatedKeys
+  ?.map((k) => usFinHub.panels[k])
+  .filter(Boolean)
+  .map((p) => ({ href: `/us/fin/${p.key}`, title: p.title }));
+---
+
+<PanelPage
+  title={def.title}
+  description={def.description}
+  lead={def.lead}
+  apiEndpoint={def.apiPath}
+  chartId={def.chart.id}
+  chartTitle={def.chart.title}
+  chartDescription={def.chart.description}
+  chartHeight={def.chart.height}
+  howToRead={def.howToRead}
+  keyFindings={def.keyFindings}
+  sources={def.sources}
+  relatedPanels={relatedPanels}
+  lastUpdated={lastUpdated}
+  lang={usFinHub.lang}
+  jsonLd={jsonLd}
+/>
+

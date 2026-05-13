@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "id": "drawdowns",
+    "name": "Mag7 Drawdowns",
+    "type": "drawdown",
+    "description": "Drawdowns from peak (%) (sample)"
+  },
+  "series": []
+}
