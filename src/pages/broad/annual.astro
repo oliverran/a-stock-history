@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="年度回报 | A股编年史" 
+  description="历年宽基指数的绝对收益与胜率分布。"
+>
+  <PageHero 
+    title="年度回报" 
+    description="我们总是倾向于高估一年的变化，而低估十年的变化。以自然年为切片，看看时间究竟是朋友，还是敌人。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="annual" 
+      apiEndpoint="/api/broad/annual.json"
+      title="沪深 300 历年绝对收益"
+      description="红绿交织间，是牛熊周期的无声往复。"
+    />
+  </div>
+</BaseLayout>

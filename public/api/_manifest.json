@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-05-13T04:16:47.372Z",
+  "endpoints": {
+    "broad": "/api/broad/",
+    "sectors": "/api/sectors/",
+    "clusters": "/api/clusters/"
+  }
+}

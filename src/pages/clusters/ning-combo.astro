@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="宁组合 | A股编年史" 
+  description="高景气度与 PEG 估值法的极致演绎。"
+>
+  <PageHero 
+    title="宁组合 (The Ning Combo)" 
+    description="当茅指数的估值被推向高处不胜寒的位置，资金急需寻找下一个宏大叙事。碳中和的时代浪潮，将以宁德时代为首的新能源产业链推上了神坛。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="ning-combo" 
+      apiEndpoint="/api/clusters/ning-combo.json"
+      title="宁组合相对沪深300超额收益"
+      description="景气度投资法的盛极而衰。"
+    />
+  </div>
+</BaseLayout>

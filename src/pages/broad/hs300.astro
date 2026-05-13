@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="沪深 300 (000300) | A股编年史" 
+  description="A 股核心资产的压舱石，反映大盘蓝筹的兴衰。"
+>
+  <PageHero 
+    title="沪深 300" 
+    description="机构资金的主战场，外资流入的核心标的。沪深300指数是观察 A 股大盘蓝筹股和整体宏观经济晴雨表的最重要窗口。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="hs300" 
+      apiEndpoint="/api/broad/hs300.json"
+      title="沪深 300 历史走势"
+      description="中国核心资产的长牛与周期起伏。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="数据口径 (Methodology)">
+      <ul class="text-editorial">
+        <li><strong>时间范围：</strong> 2005年4月8日至今。</li>
+        <li><strong>代表意义：</strong> A股市场规模大、流动性好的300只股票，覆盖了国民经济的核心支柱产业。</li>
+      </ul>
+    </SectionBlock>
+  </div>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+import CardGrid from '../../components/layout/CardGrid.astro';
+import Card from '../../components/layout/Card.astro';
+---
+
+<BaseLayout 
+  title="The Sectors 行业与轮动 | A股编年史" 
+  description="追踪七大核心赛道的周期起伏与资金轮动。"
+>
+  <PageHero 
+    title="The Sectors / 行业" 
+    description="当总量的贝塔逐渐消退，结构的阿尔法成为胜负手。我们选取了白酒、医药、新能源等七个具有时代特征的产业，追踪它们的兴衰与轮动轨迹。"
+  />
+
+  <SectionBlock sectionNumber="1" title="核心赛道 (Key Sectors)">
+    <CardGrid>
+      <Card href="/sectors/baijiu" title="白酒" description="长坡厚雪，量价齐升的消费图腾。" />
+      <Card href="/sectors/pharma" title="医药" description="从仿制药到创新药的出海与集采周期。" />
+      <Card href="/sectors/new-energy" title="新能源" description="渗透率的S型曲线与产能过剩的残酷出清。" />
+      <Card href="/sectors/semi" title="半导体" description="国产替代的星辰大海与周期属性的交织。" />
+      <Card href="/sectors/banks" title="银行" description="宏观经济的晴雨表与高股息的避风港。" />
+      <Card href="/sectors/property" title="地产" description="旧时代的引擎与资产负债表的重构。" />
+      <Card href="/sectors/ai" title="人工智能" description="算力、模型与应用的新一轮产业革命。" />
+    </CardGrid>
+  </SectionBlock>
+
+  <SectionBlock sectionNumber="2" title="轮动特征 (Rotation Analysis)">
+    <CardGrid>
+      <Card href="/sectors/rotation" title="轮动总图" description="主线与支线的交替，电风扇行情的视觉化呈现。" />
+      <Card href="/sectors/sector-valuation" title="行业估值" description="各大行业 PE/PB 的横向对比与历史纵位。" />
+    </CardGrid>
+  </SectionBlock>
+
+</BaseLayout>

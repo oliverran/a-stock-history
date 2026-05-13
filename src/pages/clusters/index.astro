@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+import CardGrid from '../../components/layout/CardGrid.astro';
+import Card from '../../components/layout/Card.astro';
+---
+
+<BaseLayout 
+  title="The Clusters 抱团与共识 | A股编年史" 
+  description="记录历代抱团资产的聚变与裂变。"
+>
+  <PageHero 
+    title="The Clusters / 抱团" 
+    description="市场的超额收益往往来自偏见的共振。每一代抱团资产的崛起，都需要宏大叙事、流动性充裕与业绩验证的三击。当其中一环破裂，瓦解便无可避免。"
+  />
+
+  <SectionBlock sectionNumber="1" title="四代抱团 (Generations)">
+    <CardGrid>
+      <Card href="/clusters/liquor-club" title="茅指数" description="外资流入与消费升级共同缔造的白马盛世。" />
+      <Card href="/clusters/ning-combo" title="宁组合" description="能源革命与高景气赛道的极致拔估值。" />
+      <Card href="/clusters/special-valuation" title="中特估" description="资产荒背景下的红利重估与央国企价值发现。" />
+      <Card href="/clusters/ai-compute" title="AI 算力" description="AGI 浪潮下，对卖铲人的狂热追逐。" />
+    </CardGrid>
+  </SectionBlock>
+
+  <SectionBlock sectionNumber="2" title="群体特征 (Characteristics)">
+    <CardGrid>
+      <Card href="/clusters/concentration" title="集中度" description="市场交易拥挤度的量化刻画。" />
+      <Card href="/clusters/correlation" title="相关性" description="当万物齐涨齐跌，分散投资如何失效。" />
+      <Card href="/clusters/predecessors" title="历史祖谱" description="从五朵金花到煤飞色舞：更早期的抱团史。" />
+    </CardGrid>
+  </SectionBlock>
+
+</BaseLayout>

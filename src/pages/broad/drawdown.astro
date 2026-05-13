@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="回撤名册 | A股编年史" 
+  description="历次系统性风险的深度与修复耗时。"
+>
+  <PageHero 
+    title="回撤名册" 
+    description="深渊的凝视。相比于上涨的狂欢，回撤时的痛苦往往更加令人印象深刻。在这里，我们记录每一次泡沫破裂后的深度与漫长的修复周期。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="drawdown" 
+      apiEndpoint="/api/broad/drawdown.json"
+      title="历史回撤幅度"
+      description="从历史最高点跌落的百分比。那些深不见底的墨绿色深渊，就是所谓“绝望的底部”。"
+    />
+  </div>
+</BaseLayout>

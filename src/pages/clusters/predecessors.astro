@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="历史祖谱 | A股编年史" 
+  description="从五朵金花到煤飞色舞：更早期的抱团史。"
+>
+  <PageHero 
+    title="历史祖谱 (Predecessors)" 
+    description="阳光之下并无新事。茅宁之前，A股同样经历过“五朵金花”与“煤飞色舞”的狂热。每一次抱团，都刻着那个时代最鲜明的宏观烙印。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="predecessors" 
+      apiEndpoint="/api/clusters/predecessors.json"
+      title="古早抱团史：金融地产煤炭有色"
+      description="城镇化与重工业化全速推进时代的王冠。"
+    />
+  </div>
+</BaseLayout>

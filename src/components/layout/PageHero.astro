@@ -1,0 +1,28 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  lastUpdated?: string;
+}
+
+const { title, description, lastUpdated } = Astro.props;
+---
+<section class="page-hero">
+  <div class="container">
+    <h1 class="text-hero">{title}</h1>
+    {description && <p class="text-editorial">{description}</p>}
+    {lastUpdated && <p class="text-caption hero-meta">Last Updated: {lastUpdated}</p>}
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+  }
+  .hero-meta {
+    margin-top: var(--spacing-md);
+    border-top: 1px solid var(--color-line);
+    display: inline-block;
+    padding-top: var(--spacing-xs);
+  }
+</style>

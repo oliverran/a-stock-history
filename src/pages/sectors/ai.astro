@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="人工智能 | A股编年史" 
+  description="算力、模型与应用的新一轮产业革命。"
+>
+  <PageHero 
+    title="人工智能 (AI)" 
+    description="当 ChatGPT 敲开 AGI 的大门，算力成为了新的基础设施。这里既有真实改变世界的产业革命，也有短期预期打满的泡沫炒作。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="ai" 
+      apiEndpoint="/api/sectors/ai.json"
+      title="中证人工智能走势"
+      description="从算法、算力到应用场景的轮动炒作。"
+    />
+  </div>
+</BaseLayout>

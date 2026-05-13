@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="新能源 | A股编年史" 
+  description="碳中和叙事下的超级贝塔与产能出清。"
+>
+  <PageHero 
+    title="新能源 (New Energy)" 
+    description="从光伏补贴退坡到电动车渗透率飙升，新能源赛道完美演绎了产业生命周期理论：从导入期的混沌，到成长期的狂飙，再到成熟期的残酷价格战。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="new-energy" 
+      apiEndpoint="/api/sectors/new-energy.json"
+      title="新能源车产业链指数"
+      description="景气度投资法的极致实验场。"
+    />
+  </div>
+</BaseLayout>

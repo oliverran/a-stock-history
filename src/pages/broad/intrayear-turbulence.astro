@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="年内回撤与回报 | A股编年史" 
+  description="即使是牛市年份，也要忍受剧烈的年内洗盘。"
+>
+  <PageHero 
+    title="年内波动 (Intrayear Turbulence)" 
+    description="年底的对账单总是平静的，但过程往往充满血雨腥风。如果你只看年度 K 线，你会觉得投资很简单；但如果你身处其中，每一次年内回撤都在考验人性的弱点。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="intrayear-turbulence" 
+      apiEndpoint="/api/broad/intrayear-turbulence.json"
+      title="历年最终回报 vs 年内最大回撤"
+      description="实心柱体代表年底最终涨跌幅；向下延伸的虚线框代表当年的最大回撤深度。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="阅读指南 (How to Read)">
+      <p class="text-editorial">
+        这张图揭示了一个残酷的事实：在 A 股，即使是最终录得大涨的牛市年份，年内也常常会经历 15% 甚至 20% 的剧烈洗盘。无法忍受过程波动的人，永远拿不到年底的奖赏。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

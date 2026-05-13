@@ -1,0 +1,485 @@
+---
+export interface Props {
+  id: string;
+  apiEndpoint: string;
+  title: string;
+  description?: string;
+  height?: string;
+}
+
+const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
+---
+
+<div class="chart-wrapper">
+  <div class="chart-header">
+    <h3 class="chart-title">{title}</h3>
+    {description && <p class="chart-desc">{description}</p>}
+  </div>
+  
+  <div 
+    id={`chart-${id}`} 
+    class="chart-container" 
+    style={`height: ${height};`}
+    data-endpoint={apiEndpoint}
+  >
+    <div class="loading-state">Loading data...</div>
+  </div>
+  
+  <div class="chart-footer">
+    <a href={apiEndpoint} target="_blank" class="api-link">API: {apiEndpoint}</a>
+  </div>
+</div>
+
+<script>
+  import * as echarts from 'echarts';
+
+  // 基础颜色与字体配置
+  const THEME = {
+    colorLine: '#2b2b2b',
+    colorUp: '#b33e3e',
+    colorDown: '#3e7355',
+    colorGrid: '#dcd8cf',
+    colorText: '#595959',
+    fontMono: '"Courier New", Courier, monospace',
+    fontSans: '"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif'
+  };
+
+  function getBaseOption(title: string): any {
+    return {
+      backgroundColor: 'transparent',
+      animation: false,
+      tooltip: {
+        trigger: 'axis',
+        backgroundColor: 'rgba(248, 245, 240, 0.9)', // paper color
+        borderColor: THEME.colorGrid,
+        textStyle: { color: THEME.colorLine, fontFamily: THEME.fontMono },
+        axisPointer: {
+          type: 'line',
+          lineStyle: { color: THEME.colorGrid, type: 'dashed' }
+        }
+      },
+      grid: {
+        top: 40,
+        left: '5%',
+        right: '5%',
+        bottom: 40,
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        axisLine: { lineStyle: { color: THEME.colorGrid } },
+        axisTick: { show: false },
+        axisLabel: { 
+          color: THEME.colorText, 
+          fontFamily: THEME.fontMono,
+          formatter: (value: string) => value.substring(0, 4) // Default just show year for dense data
+        }
+      },
+      yAxis: {
+        type: 'value',
+        scale: true,
+        splitLine: { 
+          show: true,
+          lineStyle: { color: THEME.colorGrid, type: 'dashed' } 
+        },
+        axisLine: { show: false },
+        axisTick: { show: false },
+        axisLabel: { color: THEME.colorText, fontFamily: THEME.fontMono }
+      }
+    };
+  }
+
+  function buildLineOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.date);
+    opt.series = [{
+      name: data.meta.name,
+      type: 'line',
+      data: data.series.map((item: any) => item.value),
+      showSymbol: false,
+      lineStyle: { width: 1.5, color: THEME.colorLine },
+      itemStyle: { color: THEME.colorLine }
+    }];
+    return opt;
+  }
+
+  function buildBarOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.date);
+    opt.xAxis.axisLabel.formatter = (val: string) => val; // Show full year
+    opt.series = [{
+      name: data.meta.name,
+      type: 'bar',
+      data: data.series.map((item: any) => {
+        return {
+          value: item.value,
+          itemStyle: { color: item.value >= 0 ? THEME.colorUp : THEME.colorDown }
+        };
+      })
+    }];
+    return opt;
+  }
+
+  function buildDrawdownOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.date);
+    opt.yAxis.max = 0; // Drawdown is always <= 0
+    opt.series = [{
+      name: data.meta.name,
+      type: 'line',
+      data: data.series.map((item: any) => item.value),
+      showSymbol: false,
+      lineStyle: { width: 1, color: THEME.colorDown },
+      areaStyle: {
+        color: THEME.colorDown,
+        opacity: 0.3
+      }
+    }];
+    return opt;
+  }
+
+  function buildValuationOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.date);
+    opt.series = [
+      {
+        name: 'PE(TTM)',
+        type: 'line',
+        data: data.series.map((item: any) => item.value),
+        showSymbol: false,
+        lineStyle: { width: 1.5, color: THEME.colorLine },
+        zIndex: 3
+      },
+      {
+        name: 'Mean',
+        type: 'line',
+        data: data.series.map((item: any) => item.mean),
+        showSymbol: false,
+        lineStyle: { width: 1, color: THEME.colorText, type: 'dashed' },
+        zIndex: 2
+      },
+      {
+        name: '+1 Std Dev',
+        type: 'line',
+        data: data.series.map((item: any) => item.plus1),
+        showSymbol: false,
+        lineStyle: { width: 1, color: THEME.colorUp, type: 'dotted' },
+        zIndex: 1
+      },
+      {
+        name: '-1 Std Dev',
+        type: 'line',
+        data: data.series.map((item: any) => item.minus1),
+        showSymbol: false,
+        lineStyle: { width: 1, color: THEME.colorDown, type: 'dotted' },
+        zIndex: 1
+      }
+    ];
+    return opt;
+  }
+
+  function buildHeatmapOption(data: any) {
+    return {
+      backgroundColor: 'transparent',
+      tooltip: {
+        position: 'top',
+        backgroundColor: 'rgba(248, 245, 240, 0.9)',
+        borderColor: THEME.colorGrid,
+        textStyle: { color: THEME.colorLine, fontFamily: THEME.fontMono },
+      },
+      grid: {
+        height: '70%',
+        top: '10%'
+      },
+      xAxis: {
+        type: 'category',
+        data: data.series.months,
+        splitArea: { show: true, areaStyle: { color: ['transparent'] } },
+        axisLine: { lineStyle: { color: THEME.colorGrid } },
+        axisLabel: { color: THEME.colorText, fontFamily: THEME.fontMono }
+      },
+      yAxis: {
+        type: 'category',
+        data: data.series.years,
+        splitArea: { show: true },
+        axisLine: { lineStyle: { color: THEME.colorGrid } },
+        axisLabel: { color: THEME.colorText, fontFamily: THEME.fontMono }
+      },
+      visualMap: {
+        min: -15,
+        max: 15,
+        calculable: true,
+        orient: 'horizontal',
+        left: 'center',
+        bottom: '0%',
+        inRange: {
+          color: [THEME.colorDown, '#f8f5f0', THEME.colorUp]
+        },
+        textStyle: { color: THEME.colorText, fontFamily: THEME.fontMono }
+      },
+      series: [{
+        name: data.meta.name,
+        type: 'heatmap',
+        data: data.series.data,
+        label: { show: false },
+        emphasis: {
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+          }
+        }
+      }]
+    };
+  }
+
+  function buildMultiLineOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.dates;
+    
+    // Add legend for multi-line
+    opt.legend = {
+      show: true,
+      top: 0,
+      textStyle: { color: THEME.colorText, fontFamily: THEME.fontMono }
+    };
+    
+    // Adjust grid to make room for legend
+    opt.grid.top = 60;
+    
+    // Use an array of colors suitable for dark ink style
+    const colors = [THEME.colorUp, THEME.colorDown, '#d98b2b', '#4a6f8a', THEME.colorLine];
+    
+    opt.series = Object.keys(data.series.seriesData).map((name, idx) => {
+      return {
+        name: name,
+        type: 'line',
+        data: data.series.seriesData[name],
+        showSymbol: false,
+        lineStyle: { width: 1.5 },
+        itemStyle: { color: colors[idx % colors.length] }
+      };
+    });
+    
+    return opt;
+  }
+
+  function buildDistributionBarOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.bins;
+    opt.xAxis.axisLabel.formatter = (val: string) => val;
+    opt.series = [{
+      name: 'Years Count',
+      type: 'bar',
+      data: data.series.counts,
+      itemStyle: { color: THEME.colorLine },
+      label: { show: true, position: 'top', fontFamily: THEME.fontMono, color: THEME.colorLine }
+    }];
+    return opt;
+  }
+
+  function buildStackedBarDualOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.year);
+    opt.xAxis.axisLabel.formatter = (val: string) => val;
+    opt.legend = {
+      show: true,
+      top: 0,
+      textStyle: { color: THEME.colorText, fontFamily: THEME.fontMono }
+    };
+    opt.grid.top = 60;
+    
+    opt.series = [
+      {
+        name: 'EPS Growth',
+        type: 'bar',
+        stack: 'total',
+        data: data.series.map((item: any) => item.eps),
+        itemStyle: { color: THEME.colorLine }
+      },
+      {
+        name: 'PE Expansion',
+        type: 'bar',
+        stack: 'total',
+        data: data.series.map((item: any) => item.pe),
+        itemStyle: { color: '#8c8c8c' }
+      },
+      {
+        name: 'Total Return',
+        type: 'scatter',
+        data: data.series.map((item: any) => item.total),
+        itemStyle: { color: THEME.colorUp },
+        symbolSize: 8,
+        z: 10
+      }
+    ];
+    return opt;
+  }
+
+  function buildRangeBarOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.map((item: any) => item.year);
+    opt.xAxis.axisLabel.formatter = (val: string) => val;
+    opt.legend = {
+      show: true,
+      top: 0,
+      textStyle: { color: THEME.colorText, fontFamily: THEME.fontMono }
+    };
+    opt.grid.top = 60;
+    
+    opt.series = [
+      {
+        name: 'Intrayear Max Drawdown',
+        type: 'bar',
+        data: data.series.map((item: any) => item.intrayear),
+        itemStyle: { color: 'transparent', borderColor: THEME.colorDown, borderType: 'dashed', borderWidth: 1 }
+      },
+      {
+        name: 'Final Return',
+        type: 'bar',
+        data: data.series.map((item: any) => item.final),
+        itemStyle: { color: (params: any) => params.value >= 0 ? THEME.colorUp : THEME.colorDown }
+      }
+    ];
+    return opt;
+  }
+
+  function buildStackedAreaOption(data: any) {
+    const opt = getBaseOption(data.meta.name);
+    opt.xAxis.data = data.series.years;
+    opt.xAxis.axisLabel.formatter = (val: string) => val;
+    opt.yAxis.max = 100;
+    opt.legend = {
+      show: true,
+      top: 0,
+      textStyle: { color: THEME.colorText, fontFamily: THEME.fontMono }
+    };
+    opt.grid.top = 60;
+    
+    const colors = ['#b33e3e', '#d98b2b', '#3e7355', '#4a6f8a', '#2b2b2b', '#8c8c8c'];
+    
+    opt.series = Object.keys(data.series.seriesData).map((name, idx) => {
+      return {
+        name: name,
+        type: 'line',
+        stack: 'total',
+        areaStyle: {},
+        emphasis: { focus: 'series' },
+        showSymbol: false,
+        data: data.series.seriesData[name],
+        itemStyle: { color: colors[idx % colors.length] },
+        lineStyle: { width: 0 }
+      };
+    });
+    return opt;
+  }
+
+  function initCharts() {
+    const containers = document.querySelectorAll('.chart-container');
+    
+    containers.forEach(async (container) => {
+      const el = container as HTMLElement;
+      const endpoint = el.dataset.endpoint;
+      if (!endpoint) return;
+
+      try {
+        const response = await fetch(endpoint);
+        const data = await response.json();
+        el.innerHTML = ''; // clear loading
+        
+        const chart = echarts.init(el, null, { renderer: 'canvas' });
+        let option = {};
+        
+        switch(data.meta.type) {
+          case 'bar':
+            option = buildBarOption(data);
+            break;
+          case 'drawdown':
+            option = buildDrawdownOption(data);
+            break;
+          case 'valuation':
+            option = buildValuationOption(data);
+            break;
+          case 'heatmap':
+            option = buildHeatmapOption(data);
+            break;
+          case 'multi-line':
+            option = buildMultiLineOption(data);
+            break;
+          case 'distribution-bar':
+            option = buildDistributionBarOption(data);
+            break;
+          case 'stacked-bar-dual':
+            option = buildStackedBarDualOption(data);
+            break;
+          case 'range-bar':
+            option = buildRangeBarOption(data);
+            break;
+          case 'stacked-area':
+            option = buildStackedAreaOption(data);
+            break;
+          case 'line-mark':
+          case 'line':
+          default:
+            option = buildLineOption(data);
+            break;
+        }
+        
+        chart.setOption(option);
+        window.addEventListener('resize', () => chart.resize());
+      } catch (error) {
+        console.error('Failed to load chart data:', error);
+        el.innerHTML = '<div class="error-state">Failed to load data</div>';
+      }
+    });
+  }
+
+  document.addEventListener('astro:page-load', initCharts);
+  initCharts();
+</script>
+
+<style>
+  .chart-wrapper {
+    margin: var(--spacing-lg) 0;
+  }
+  .chart-header {
+    margin-bottom: var(--spacing-sm);
+  }
+  .chart-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .chart-desc {
+    color: var(--color-ink-light);
+    font-size: 0.95rem;
+    margin-top: var(--spacing-xs);
+  }
+  .chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+    background-color: transparent; 
+  }
+  .loading-state, .error-state {
+    font-family: var(--font-mono);
+    color: var(--color-ink-light);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  .chart-footer {
+    margin-top: var(--spacing-xs);
+    text-align: right;
+  }
+  .api-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-ink-light);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .api-link:hover {
+    border-bottom-color: var(--color-ink-light);
+  }
+</style>

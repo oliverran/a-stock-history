@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="AI 算力 | A股编年史" 
+  description="通用人工智能时代的算力基建叙事。"
+>
+  <PageHero 
+    title="AI 算力 (AI Compute)" 
+    description="ChatGPT 的爆火点燃了 AGI 的引信。在模型层竞争尚不明朗之际，卖铲子的人——光模块、服务器与算力租赁，成为了资金最疯狂的博弈阵地。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="ai-compute" 
+      apiEndpoint="/api/clusters/ai-compute.json"
+      title="AI算力组合相对沪深300超额收益"
+      description="算力即权力的时代叙事。"
+    />
+  </div>
+</BaseLayout>

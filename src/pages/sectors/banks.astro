@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="银行 | A股编年史" 
+  description="宏观经济的晴雨表与高股息的避风港。"
+>
+  <PageHero 
+    title="银行 (Banks)" 
+    description="百业之母。在狂飙突进的年代，它们是信用的水泵；在资产荒的年代，它们是提供稳定红利与高股息的避风港。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="banks" 
+      apiEndpoint="/api/sectors/banks.json"
+      title="中证银行走势"
+      description="极低的估值中枢与长期稳定的ROE。"
+    />
+  </div>
+</BaseLayout>

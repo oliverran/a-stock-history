@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="创业板指 (399006) | A股编年史" 
+  description="中国创新型企业与成长股的风向标。"
+>
+  <PageHero 
+    title="创业板指" 
+    description="从互联网+到新能源革命，创业板指汇聚了中国最具弹性和成长性的新经济企业。它的每一次爆发都伴随着强烈的产业叙事。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="chinext" 
+      apiEndpoint="/api/broad/chinext.json"
+      title="创业板指历史走势"
+      description="成长股的高弹性与高波动特征。"
+    />
+  </div>
+</BaseLayout>

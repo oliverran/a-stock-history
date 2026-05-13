@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="ROE 锚点 | A股编年史" 
+  description="指数长期复合回报率的物理重力锚。"
+>
+  <PageHero 
+    title="ROE 锚点 (Return on Equity)" 
+    description="短期看，股价是投票机；长期看，股价是称重机。而净资产收益率 (ROE) 就是那台称重机的刻度。一个指数的长期年化回报，最终会无可阻挡地收敛于它的 ROE 中枢。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="roe-anchor" 
+      apiEndpoint="/api/broad/roe-anchor.json"
+      title="沪深300 历史 ROE 走势"
+      description="反映了 A 股核心资产真实的赚钱效率与资本回报水平。"
+    />
+  </div>
+</BaseLayout>

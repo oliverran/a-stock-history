@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="中证 500 (000905) | A股编年史" 
+  description="中盘股的代表，成长与弹性的代名词。"
+>
+  <PageHero 
+    title="中证 500" 
+    description="当大盘蓝筹陷入拥挤，资金便会溢出到这里。中证500代表着中国A股腰部力量的活跃度，也是量化资金最爱的超额收益源泉。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="csi500" 
+      apiEndpoint="/api/broad/csi500.json"
+      title="中证 500 历史走势"
+      description="中小市值企业的阿尔法与贝塔交织。"
+    />
+  </div>
+</BaseLayout>

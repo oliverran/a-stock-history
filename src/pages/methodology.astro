@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import PageHero from '../components/layout/PageHero.astro';
+import SectionBlock from '../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="数据口径 (Methodology) | A股编年史" 
+  description="关于本站数据来源、处理方式与免责声明的详细说明。"
+>
+  <PageHero 
+    title="Methodology / 数据口径" 
+    description="在进行长期历史回溯时，保持数据口径的一致性与严谨性至关重要。本文档解释了 A股编年史 中所有图表背后的数据逻辑。"
+  />
+
+  <div class="container">
+    <SectionBlock sectionNumber="1" title="数据来源 (Data Sources)">
+      <ul class="text-editorial">
+        <li><strong>指数行情：</strong> 所有宽基与行业指数的日度、月度收盘价均取自交易所及中证指数公司公开披露的原始数据。</li>
+        <li><strong>超额收益：</strong> “茅指数”、“宁组合”等自定义代理组合的超额收益，统一以沪深300指数作为比较基准进行扣减。</li>
+        <li><strong>估值数据：</strong> 市盈率 (PE) 统一采用 TTM（滚动市盈率）口径，并剔除负值极值干扰。</li>
+      </ul>
+    </SectionBlock>
+
+    <SectionBlock sectionNumber="2" title="处理逻辑 (Processing Logic)">
+      <ul class="text-editorial">
+        <li><strong>回撤计算：</strong> 以特定周期内的最高点为基准，计算每日收盘价相对前高的跌幅百分比。</li>
+        <li><strong>标准化：</strong> 在跨资产/跨行业比较图表（如行业轮动总图）中，为消除绝对点位差异，统一将起始点位归一化为 100 进行同基期起跑比较。</li>
+        <li><strong>缺失值填充：</strong> 对于非交易日或由于停牌导致的数据缺失，采用前值填充 (Forward Fill) 策略。</li>
+      </ul>
+    </SectionBlock>
+
+    <SectionBlock sectionNumber="3" title="免责声明 (Disclaimer)">
+      <p class="text-editorial">
+        《A股编年史》仅作为一个历史复盘与学术研究的静态档案库。<br><br>
+        本站提供的所有数据、图表、归纳性总结及编辑陈述，均不构成任何形式的投资建议或财务指导。历史收益不代表未来表现，金融市场存在不可预测的尾部风险。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

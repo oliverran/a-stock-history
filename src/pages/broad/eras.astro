@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="六时代 | A股编年史" 
+  description="从草莽时代到机构化时代，市场的阶段性特征。"
+>
+  <PageHero 
+    title="六时代" 
+    description="A股并非线性发展，而是由一个个充满时代烙印的剧目拼接而成。从早期的庄股横行、股权分置改革，到杠杆牛、外资定价，再到如今的量化与被动时代。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="eras" 
+      apiEndpoint="/api/broad/eras.json"
+      title="时代分幕"
+      description="在长周期折线图上，寻找那些改变市场规则的底层逻辑转折点。"
+    />
+  </div>
+</BaseLayout>

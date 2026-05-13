@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="收益率分布 | A股编年史" 
+  description="沪深300历年收益率分桶统计，打破平均年化幻觉。"
+>
+  <PageHero 
+    title="收益分布 (Distribution)" 
+    description="在金融学教科书中，股市收益率被假设为正态分布；但在现实的 A 股市场，它更像是一个肥尾的怪物。所谓的“年化 10%”，在绝大多数年份里根本不存在。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="distribution" 
+      apiEndpoint="/api/broad/distribution.json"
+      title="沪深300年度收益率分布直方图"
+      description="横轴为收益率区间，纵轴为出现的年份数量。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="阅读指南 (How to Read)">
+      <p class="text-editorial">
+        这张图揭示了 A 股“牛短熊长”与“暴涨暴跌”的本质特征。你可以看到，大量年份集中在 <code>-20% ~ 0%</code> 的区间，而带来超额回报的年份往往跳跃在 <code>>40%</code> 的极端右尾。这告诉我们：如果错过了那几个极端上涨的年份，你的长期回报将趋近于零。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

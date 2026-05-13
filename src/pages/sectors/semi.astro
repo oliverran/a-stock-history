@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="半导体 | A股编年史" 
+  description="国产替代的星辰大海与周期属性的交织。"
+>
+  <PageHero 
+    title="半导体 (Semiconductors)" 
+    description="硅基时代的石油。半导体板块兼具强烈的成长属性（国产替代、自主可控）与残酷的周期属性（硅周期、库存水位），构成了极高的博弈难度。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="semi" 
+      apiEndpoint="/api/sectors/semi.json"
+      title="中华半导体芯片走势"
+      description="科技自立自强的长征之路。"
+    />
+  </div>
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="集中度 | A股编年史" 
+  description="市场交易拥挤度的量化刻画。"
+>
+  <PageHero 
+    title="集中度 (Concentration)" 
+    description="抱团的本质是资金的聚变。当全市场前 5% 的股票吸走了超过一半的流动性，这不仅是共识的巅峰，往往也是瓦解的前兆。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="concentration" 
+      apiEndpoint="/api/clusters/concentration.json"
+      title="前5%个股成交额占比"
+      description="数值越高，代表交易越拥挤，虹吸效应越明显。"
+    />
+  </div>
+</BaseLayout>

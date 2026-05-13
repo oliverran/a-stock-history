@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="戴维斯双击/双杀拆解 | A股编年史" 
+  description="将年度涨跌幅拆解为盈利贡献与估值贡献。"
+>
+  <PageHero 
+    title="戴维斯拆解 (Earnings vs Multiple)" 
+    description="价格的变动只有两个源泉：要么公司赚了更多的钱（EPS Growth），要么市场愿意给这些钱更高的定价（PE Expansion）。拆解它们，就是透视牛熊的本质。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="davis-decomposition" 
+      apiEndpoint="/api/broad/davis-decomposition.json"
+      title="沪深300年度涨跌幅归因分析"
+      description="红点为最终总回报；黑色柱体代表盈利贡献，灰色柱体代表估值贡献。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="阅读指南 (How to Read)">
+      <p class="text-editorial">
+        当黑柱与灰柱同向增长，这就是经典的<strong>戴维斯双击</strong>（如 2017 年）；当两者同向暴跌，便是<strong>戴维斯双杀</strong>（如 2018 年、2021 年）。而当你看到极长的灰色柱体孤立存在时，那便是一场纯粹由流动性催生的<strong>水牛泡沫</strong>（如 2014-2015 年）。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

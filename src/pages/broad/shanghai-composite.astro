@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="上证综指 (000001) | A股编年史" 
+  description="上证综合指数的历史全景图，反映上海证券交易所上市公司的整体表现。"
+>
+  <PageHero 
+    title="上证综指" 
+    description="作为 A 股市场最古老、最广为人知的指数，上证综指记录了中国资本市场从无到有、从小到大的全过程。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="sh-composite" 
+      apiEndpoint="/api/broad/shanghai-composite.json"
+      title="上证综指历史走势"
+      description="包含自基日以来的所有交易日收盘价。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="数据口径 (Methodology)">
+      <ul class="text-editorial">
+        <li><strong>数据来源：</strong> 公开市场交易数据。</li>
+        <li><strong>时间范围：</strong> 1990年12月19日至今（示例数据为随机生成）。</li>
+        <li><strong>计算方法：</strong> 以收盘价为准，不考虑除权除息（因为综合指数本身特性）。</li>
+      </ul>
+    </SectionBlock>
+
+    <SectionBlock sectionNumber="2" title="继续阅读 (Continue Reading)">
+      <p class="text-editorial">
+        想要了解同一时期的其他市场表现？<br/>
+        请查看 <a href="/broad/shenzhen-component">深证成指</a> 或是代表核心资产的 <a href="/broad/hs300">沪深 300</a>。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

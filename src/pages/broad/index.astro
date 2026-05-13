@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+import CardGrid from '../../components/layout/CardGrid.astro';
+import Card from '../../components/layout/Card.astro';
+---
+
+<BaseLayout 
+  title="The Market 宽基与时代 | A股编年史" 
+  description="刻画 A 股的总体形貌、周期回撤及估值水位。"
+>
+  <PageHero 
+    title="The Market / 宽基" 
+    description="我们以核心宽基指数为锚，观测市场的长期形状。无论是草莽时代的暴涨暴跌，还是机构化时代的存量博弈，估值钟摆的规律始终在起作用。"
+  />
+
+  <SectionBlock sectionNumber="1" title="核心指数 (Core Indices)">
+    <CardGrid>
+      <Card href="/broad/shanghai-composite" title="上证综指 (000001)" description="反映上海证券交易所上市公司的整体表现。" />
+      <Card href="/broad/shenzhen-component" title="深证成指 (399001)" description="反映深圳证券交易所上市公司的整体表现。" />
+      <Card href="/broad/hs300" title="沪深 300 (000300)" description="沪深两市规模大、流动性好的300只核心资产。" />
+      <Card href="/broad/chinext" title="创业板指 (399006)" description="中国创新型企业与成长股的风向标。" />
+      <Card href="/broad/star50" title="科创 50 (000688)" description="硬科技与自主可控战略的集中体现。" />
+      <Card href="/broad/csi500" title="中证 500 (000905)" description="中盘股的代表，成长与弹性的代名词。" />
+    </CardGrid>
+  </SectionBlock>
+
+  <SectionBlock sectionNumber="2" title="透视与拆解 (Anatomy & Turbulence)">
+    <CardGrid>
+      <Card href="/broad/distribution" title="收益分布" description="打破均值幻觉：年度收益率的肥尾特征直方图。" />
+      <Card href="/broad/davis-decomposition" title="戴维斯拆解" description="将年度涨跌幅剥离为 EPS 增长与 PE 扩张。" />
+      <Card href="/broad/intrayear-turbulence" title="年内波动" description="当年最终回报与年内最大回撤的惊人反差。" />
+      <Card href="/broad/volatility" title="恐慌指数" description="观测市场极度恐慌与流动性枯竭的标尺。" />
+      <Card href="/broad/sector-evolution" title="结构变迁" description="沪深300内部大类行业权重的演化史。" />
+      <Card href="/broad/roe-anchor" title="ROE 锚点" description="指数长期复合回报率的终极物理重力。" />
+    </CardGrid>
+  </SectionBlock>
+
+  <SectionBlock sectionNumber="3" title="周期与形貌 (Cycles & Shape)">
+    <CardGrid>
+      <Card href="/broad/annual" title="年度回报" description="历年宽基指数的绝对收益与胜率分布。" />
+      <Card href="/broad/drawdown" title="回撤名册" description="历次系统性风险的深度与修复耗时。" />
+      <Card href="/broad/eras" title="六时代" description="从庄股时代到量化时代的切片与断代史。" />
+    </CardGrid>
+  </SectionBlock>
+
+  <SectionBlock sectionNumber="4" title="估值与风格 (Valuation & Style)">
+    <CardGrid>
+      <Card href="/broad/valuation" title="估值锚点" description="市盈率与市净率的历史分位数与均值回归。" />
+      <Card href="/broad/style-ratios" title="风格比值" description="大盘 vs 小盘，价值 vs 成长的周期往复。" />
+      <Card href="/broad/seasonality" title="季节性" description="春季躁动与日历效应的统计学验证。" />
+    </CardGrid>
+  </SectionBlock>
+
+</BaseLayout>

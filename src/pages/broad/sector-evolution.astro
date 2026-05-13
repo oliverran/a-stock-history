@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="行业权重变迁 | A股编年史" 
+  description="一部 A 股产业结构的微观进化史。"
+>
+  <PageHero 
+    title="结构变迁 (Sector Evolution)" 
+    description="指数从来不是静止的化石，而是活生生的有机体。观察沪深 300 内部的行业权重更替，就如同在阅读一部浓缩的中国宏观经济产业升级史。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="sector-evolution" 
+      apiEndpoint="/api/broad/sector-evolution.json"
+      title="沪深300大类行业权重演变 (100%堆叠图)"
+      description="从金融地产的独大，到消费医药的崛起，再到科技制造的突围。"
+    />
+  </div>
+</BaseLayout>

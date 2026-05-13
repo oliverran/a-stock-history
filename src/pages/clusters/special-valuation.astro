@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="中特估 | A股编年史" 
+  description="资产荒背景下的红利重估与央国企价值发现。"
+>
+  <PageHero 
+    title="中特估 (Special Valuation)" 
+    description="在长端利率不断下行、成长赛道集体杀估值的凛冬，“中国特色估值体系”横空出世。高股息与稳定分红成为了资金最后的避风港。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="special-valuation" 
+      apiEndpoint="/api/clusters/special-valuation.json"
+      title="中特估组合相对沪深300超额收益"
+      description="从无人问津到全网追捧的价值重估。"
+    />
+  </div>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-branding">
+      <a href="/" class="brand-link">A股编年史</a>
+    </div>
+    <nav class="site-nav">
+      <a href="/broad/" class={Astro.url.pathname.startsWith('/broad') ? 'active' : ''}>Broad</a>
+      <a href="/sectors/" class={Astro.url.pathname.startsWith('/sectors') ? 'active' : ''}>Sectors</a>
+      <a href="/clusters/" class={Astro.url.pathname.startsWith('/clusters') ? 'active' : ''}>Clusters</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-line);
+    padding: var(--spacing-sm) 0;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-branding {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .brand-link {
+    border: none;
+  }
+  .brand-link:hover {
+    border: none;
+    color: var(--color-up);
+  }
+  .site-nav {
+    display: flex;
+    gap: var(--spacing-md);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  .site-nav a {
+    border: none;
+    color: var(--color-ink-light);
+  }
+  .site-nav a:hover, .site-nav a.active {
+    color: var(--color-ink);
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="市场波动率 | A股编年史" 
+  description="当数值飙升，代表市场正在为极度恐慌定价。"
+>
+  <PageHero 
+    title="波动率与恐慌 (Volatility)" 
+    description="波动率是市场情绪的心电图。长期的低波动孕育着自满与脆弱，而瞬时的脉冲式飙升，则往往标志着流动性危机的爆发与恐慌极值的到来。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="volatility" 
+      apiEndpoint="/api/broad/volatility.json"
+      title="A股核心资产历史波动率"
+      description="日常中枢在 15% 左右，一旦突破 30% 则意味着系统性风险正在定价。"
+    />
+  </div>
+</BaseLayout>

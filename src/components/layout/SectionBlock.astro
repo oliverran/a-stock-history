@@ -1,0 +1,35 @@
+---
+export interface Props {
+  sectionNumber: string;
+  title: string;
+  description?: string;
+}
+
+const { sectionNumber, title, description } = Astro.props;
+---
+<section class="section-block">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">§ {sectionNumber}</span>
+      <h2 class="section-title">{title}</h2>
+      {description && <p class="text-editorial">{description}</p>}
+    </div>
+    <div class="section-content">
+      <slot />
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-block {
+    margin-bottom: var(--spacing-xl);
+  }
+  .section-header {
+    margin-bottom: var(--spacing-md);
+    max-width: 800px;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="相关性 | A股编年史" 
+  description="当万物齐涨齐跌，分散投资如何失效。"
+>
+  <PageHero 
+    title="相关性 (Correlation)" 
+    description="在系统性崩溃的末期，或者抱团瓦解的泥沙俱下阶段，所有资产的相关性都会急剧趋近于 1。这时候，任何基于行业分散的理论都会失效。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="correlation" 
+      apiEndpoint="/api/clusters/correlation.json"
+      title="沪深300成分股平均相关系数"
+      description="相关性飙升，往往伴随着宏观流动性冲击。"
+    />
+  </div>
+</BaseLayout>

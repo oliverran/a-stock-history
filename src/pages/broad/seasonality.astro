@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="季节性 | A股编年史" 
+  description="春季躁动与日历效应的统计学验证。"
+>
+  <PageHero 
+    title="季节性" 
+    description="A股真的存在“春季躁动”、“五穷六绝七翻身”吗？我们通过热力图的维度，试图在混沌的月度收益率中寻找那些微弱的统计学规律。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="seasonality" 
+      apiEndpoint="/api/broad/seasonality.json"
+      title="月度收益率热力图"
+      description="深红代表当月大涨，深绿代表当月大跌。横轴为月份，纵轴为年份。"
+    />
+  </div>
+</BaseLayout>

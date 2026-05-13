@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="地产 | A股编年史" 
+  description="旧时代的引擎与资产负债表的重构。"
+>
+  <PageHero 
+    title="地产 (Real Estate)" 
+    description="中国经济过去二十年最重要的加杠杆引擎。当人口结构与城镇化率跨过拐点，这个板块的走势便是一部宏大的资产负债表重构史。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="property" 
+      apiEndpoint="/api/sectors/property.json"
+      title="国证地产走势"
+      description="黄金时代、白银时代与黑铁时代的切换。"
+    />
+  </div>
+</BaseLayout>

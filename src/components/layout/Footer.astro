@@ -1,0 +1,44 @@
+---
+---
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-meta">
+      <p class="text-caption">The Chronicle of China A-Shares</p>
+      <p class="footer-text">
+        本站所有数据均为历史复盘使用，不构成任何投资建议。数据源自公开市场信息，我们尽力确保其准确性，但不对其绝对精确做保证。<br/>
+        <a href="/methodology/">数据口径说明 (Methodology)</a> &nbsp;|&nbsp; <a href="/api/">API 开放数据 (API)</a>
+      </p>
+    </div>
+    <div class="footer-copyright">
+      <p class="text-caption">&copy; {new Date().getFullYear()} A股编年史</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-line);
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer-meta {
+    max-width: 600px;
+  }
+  .footer-text {
+    font-size: 0.875rem;
+    color: var(--color-ink-light);
+    margin-top: var(--spacing-xs);
+  }
+  @media (max-width: 768px) {
+    .footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+    }
+  }
+</style>

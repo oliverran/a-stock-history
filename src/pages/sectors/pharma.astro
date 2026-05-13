@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="医药 | A股编年史" 
+  description="从仿制药到创新药的出海与集采周期。"
+>
+  <PageHero 
+    title="医药 (Pharmaceuticals)" 
+    description="老龄化是人类社会不可逆的趋势，而医药板块则是这一庞大需求的映射。在这里，政策的达摩克利斯之剑与创新的星辰大海反复交织。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="pharma" 
+      apiEndpoint="/api/sectors/pharma.json"
+      title="中证医药历史走势"
+      description="经历过长牛，也经历过集采风暴的洗礼。"
+    />
+  </div>
+</BaseLayout>

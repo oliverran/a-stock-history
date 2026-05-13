@@ -1,0 +1,161 @@
+/* 
+  Global Design System for A股编年史 
+  Style: Editorial Financial Yearbook
+*/
+
+:root {
+  /* Colors */
+  --color-paper: #f8f5f0;       /* 温暖纸张底色 */
+  --color-ink: #2b2b2b;         /* 深墨色文字 */
+  --color-ink-light: #595959;   /* 浅墨色，用于次要文本 */
+  --color-line: #dcd8cf;        /* 细线分隔 */
+  
+  --color-up: #b33e3e;          /* 暗红：上涨 (克制) */
+  --color-down: #3e7355;        /* 墨绿：下跌 (克制) */
+
+  /* Typography */
+  --font-sans: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", "Songti SC", "SimSun", "华文宋体", serif;
+  --font-mono: "Courier New", Courier, monospace; /* 用于章节号、数据 */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Layout */
+  --max-width-content: 960px;
+  --max-width-chart: 1000px;
+}
+
+/* Reset & Basics */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--spacing-sm);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-line);
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--color-ink);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Typography Utilities */
+.text-hero {
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-md);
+}
+
+.text-editorial {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-ink-light);
+}
+
+.text-caption {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Structural Components */
+.divider {
+  height: 1px;
+  background-color: var(--color-line);
+  margin: var(--spacing-lg) 0;
+  border: none;
+}
+
+.section-number {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-ink-light);
+  margin-bottom: var(--spacing-sm);
+  display: block;
+}
+
+/* Component: Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.card {
+  border: 1px solid var(--color-line);
+  padding: var(--spacing-md);
+  background: transparent;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--color-ink);
+  transform: translateY(-2px);
+  border-bottom-color: var(--color-ink); /* override a:hover */
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: var(--color-ink-light);
+  margin-bottom: 0;
+}
+
+/* ECharts Container */
+.chart-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid var(--color-line);
+  margin: var(--spacing-md) 0;
+  background-color: rgba(255, 255, 255, 0.3); /* slightly offset from paper */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 350px;
+  }
+}

@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="深证成指 (399001) | A股编年史" 
+  description="深证成指的历史全景图，反映深圳证券交易所上市公司的整体表现。"
+>
+  <PageHero 
+    title="深证成指" 
+    description="作为深圳市场的老牌核心指数，深证成指见证了中国民营经济的崛起与南方资本市场的繁荣。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="sz-component" 
+      apiEndpoint="/api/broad/shenzhen-component.json"
+      title="深证成指历史走势"
+      description="自1991年基日以来的所有交易日收盘价。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="数据口径 (Methodology)">
+      <ul class="text-editorial">
+        <li><strong>数据来源：</strong> 公开市场交易数据。</li>
+        <li><strong>时间范围：</strong> 1991年4月3日至今。</li>
+        <li><strong>成分逻辑：</strong> 选取深圳证券交易所规模较大、流动性较好的500只股票。</li>
+      </ul>
+    </SectionBlock>
+  </div>
+</BaseLayout>

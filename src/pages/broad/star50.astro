@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="科创 50 (000688) | A股编年史" 
+  description="硬科技与自主可控战略的集中体现。"
+>
+  <PageHero 
+    title="科创 50" 
+    description="伴随注册制而生，承载着大国博弈下的“硬科技”突围使命。半导体、生物医药与高端装备构成了它的核心底色。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="star50" 
+      apiEndpoint="/api/broad/star50.json"
+      title="科创 50 历史走势"
+      description="注册制时代的硬科技试金石。"
+    />
+  </div>
+</BaseLayout>

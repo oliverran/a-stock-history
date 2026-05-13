@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="行业轮动总图 | A股编年史" 
+  description="各大核心行业指数相对走势对比与电风扇行情刻画。"
+>
+  <PageHero 
+    title="轮动总图 (Rotation)" 
+    description="市场的资金总量是有限的，当缺乏绝对主线时，资金便会在各个板块间进行高频的博弈与切换。我们将多条行业主线置于同一坐标系中，观察这台“电风扇”的运转轨迹。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="rotation" 
+      apiEndpoint="/api/sectors/rotation.json"
+      title="核心赛道相对走势对比"
+      description="白酒、医药、新能源、半导体、银行的交叉往复。"
+    />
+    
+    <SectionBlock sectionNumber="1" title="阅读指南 (How to Read)">
+      <p class="text-editorial">
+        本图通过归一化处理（以相同基期为 100），直观展示了在同一宏观环境下，不同产业资本周期的错位。你可以清晰地看到“跷跷板效应”：当新能源冲顶时，消费医药往往处于失血状态；而当成长股集体杀估值时，高股息的银行则会体现出强烈的抗跌属性。
+      </p>
+    </SectionBlock>
+  </div>
+</BaseLayout>

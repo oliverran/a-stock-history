@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import PageHero from '../../components/layout/PageHero.astro';
+import ChartBox from '../../components/charts/ChartBox.astro';
+import SectionBlock from '../../components/layout/SectionBlock.astro';
+---
+
+<BaseLayout 
+  title="估值锚点 | A股编年史" 
+  description="市盈率与市净率的历史分位数与均值回归。"
+>
+  <PageHero 
+    title="估值锚点" 
+    description="万物皆周期，均值必回归。无论是情绪极度悲观时的破净潮，还是流动性泛滥时的市梦率，最终都会被万有引力拉回中枢。"
+    lastUpdated={new Date().toISOString().split('T')[0]}
+  />
+
+  <div class="container">
+    <ChartBox 
+      id="valuation" 
+      apiEndpoint="/api/broad/valuation.json"
+      title="PE (TTM) 走势与标准差通道"
+      description="在+1与-1标准差之间游走的估值钟摆。"
+    />
+  </div>
+</BaseLayout>
