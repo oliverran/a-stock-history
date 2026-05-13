@@ -8,6 +8,7 @@ export interface Props {
   title: string;
   description: string;
   lead?: string;
+  judgement?: string;
   apiEndpoint: string;
   chartId: string;
   chartTitle: string;
@@ -15,17 +16,21 @@ export interface Props {
   chartHeight?: string;
   howToRead?: string;
   keyFindings?: string[];
+  methodology?: string;
   sources?: string[];
+  relatedLinks?: Array<{ href: string; title: string; description?: string }>;
   relatedPanels?: Array<{ href: string; title: string }>;
   lastUpdated?: string;
   lang?: string;
   jsonLd?: any | any[];
+  apiData?: any;
 }
 
 const {
   title,
   description,
   lead,
+  judgement,
   apiEndpoint,
   chartId,
   chartTitle,
@@ -33,11 +38,14 @@ const {
   chartHeight,
   howToRead,
   keyFindings,
+  methodology,
   sources,
+  relatedLinks,
   relatedPanels,
   lastUpdated,
   lang = 'zh-CN',
   jsonLd,
+  apiData,
 } = Astro.props;
 ---
 
@@ -51,12 +59,24 @@ const {
       title={chartTitle}
       description={chartDescription}
       height={chartHeight}
+      lang={lang}
     />
 
-    {(howToRead || (keyFindings && keyFindings.length > 0) || (sources && sources.length > 0)) && (
+    {(judgement ||
+      howToRead ||
+      (keyFindings && keyFindings.length > 0) ||
+      methodology ||
+      (sources && sources.length > 0) ||
+      (relatedLinks && relatedLinks.length > 0)) && (
       <div class="panel-notes">
+        {judgement && (
+          <SectionBlock sectionNumber="0" title={lang === 'zh-CN' ? '判断' : 'Takeaway'}>
+            <p class="text-editorial">{judgement}</p>
+          </SectionBlock>
+        )}
+
         {howToRead && (
-          <SectionBlock sectionNumber="1" title={lang === 'zh-CN' ? '图注 / 怎么看' : 'How to Read'}>
+          <SectionBlock sectionNumber="1" title={lang === 'zh-CN' ? '读图方法' : 'How to Read'}>
             <p class="text-editorial">{howToRead}</p>
           </SectionBlock>
         )}
@@ -71,13 +91,56 @@ const {
           </SectionBlock>
         )}
 
-        {sources && sources.length > 0 && (
-          <SectionBlock sectionNumber="3" title={lang === 'zh-CN' ? '数据来源' : 'Sources'}>
+        {(methodology || (sources && sources.length > 0)) && (
+          <SectionBlock sectionNumber="3" title={lang === 'zh-CN' ? '方法与来源' : 'Methodology & Sources'}>
+            {methodology && <p class="text-editorial">{methodology}</p>}
+            {sources && sources.length > 0 && (
+              <ul class="text-editorial">
+                {sources.map((it) => (
+                  <li>{it}</li>
+                ))}
+              </ul>
+            )}
+          </SectionBlock>
+        )}
+
+        {relatedLinks && relatedLinks.length > 0 && (
+          <SectionBlock sectionNumber="4" title={lang === 'zh-CN' ? '相关链接' : 'Links'}>
             <ul class="text-editorial">
-              {sources.map((it) => (
-                <li>{it}</li>
+              {relatedLinks.map((it) => (
+                <li>
+                  <a href={it.href} target="_blank">{it.title}</a>
+                  {it.description ? ` — ${it.description}` : ''}
+                </li>
               ))}
             </ul>
+          </SectionBlock>
+        )}
+
+        {apiData?.events && Array.isArray(apiData.events) && apiData.events.length > 0 && (
+          <SectionBlock sectionNumber="5" title={lang === 'zh-CN' ? '回撤事件目录' : 'Drawdown Events'}>
+            <div class="events-table">
+              <div class="events-row events-head">
+                <div>事件</div>
+                <div>开始</div>
+                <div>最低</div>
+                <div>修复</div>
+                <div>深度</div>
+                <div>下跌天数</div>
+                <div>修复天数</div>
+              </div>
+              {apiData.events.map((ev: any, idx: number) => (
+                <div class="events-row" data-idx={idx}>
+                  <div>{ev.name ?? `事件#${idx + 1}`}</div>
+                  <div>{ev.start}</div>
+                  <div>{ev.trough}</div>
+                  <div>{ev.end}</div>
+                  <div>{typeof ev.depth === 'number' ? `${ev.depth.toFixed(2)}%` : ev.depth}</div>
+                  <div>{ev.durationDays}</div>
+                  <div>{ev.recoveryDays}</div>
+                </div>
+              ))}
+            </div>
           </SectionBlock>
         )}
       </div>
@@ -85,7 +148,7 @@ const {
 
     <SectionBlock sectionNumber="A" title={lang === 'zh-CN' ? 'API 数据' : 'API'}>
       <p class="text-editorial">
-        <a href={apiEndpoint} target="_blank">Download JSON</a>
+        <a href={apiEndpoint} target="_blank">{lang === 'zh-CN' ? '下载 JSON' : 'Download JSON'}</a>
       </p>
     </SectionBlock>
 
@@ -100,4 +163,33 @@ const {
     )}
   </div>
 </BaseLayout>
+
+<style>
+  .events-table {
+    border: 1px solid var(--color-border, rgba(0,0,0,0.12));
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-size: 0.9rem;
+  }
+  .events-row {
+    display: grid;
+    grid-template-columns: 1.4fr 0.9fr 0.9fr 0.9fr 0.7fr 0.7fr 0.7fr;
+    gap: 10px;
+    padding: 10px 12px;
+    border-top: 1px solid var(--color-border, rgba(0,0,0,0.08));
+  }
+  .events-row:first-child {
+    border-top: 0;
+  }
+  .events-head {
+    background: rgba(0,0,0,0.03);
+    font-weight: 600;
+  }
+  .events-row > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
 

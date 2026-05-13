@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "id": "sector-momentum",
+    "name": "行业动量（12M）",
+    "type": "bar",
+    "description": "各行业近 12 个月相对强弱（示例）"
+  },
+  "series": [
+    { "date": "白酒", "value": 8.0 },
+    { "date": "医药", "value": 5.0 },
+    { "date": "新能源", "value": 18.0 },
+    { "date": "半导体", "value": 22.0 },
+    { "date": "银行", "value": 10.0 },
+    { "date": "地产", "value": -6.0 },
+    { "date": "AI", "value": 28.0 }
+  ]
+}

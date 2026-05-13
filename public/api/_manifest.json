@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-05-13T06:28:10.636Z",
+  "generatedAt": "2026-05-13T10:06:10.190Z",
   "items": [
     {
       "key": "cn/broad/annual",
@@ -10,18 +10,130 @@
       "bytes": 1309
     },
     {
+      "key": "cn/broad/breadth",
+      "path": "/api/cn/broad/breadth.json",
+      "url": "/api/cn/broad/breadth.json",
+      "modified": "2026-05-13T06:59:47.555Z",
+      "bytes": 1059
+    },
+    {
       "key": "cn/broad/chinext",
       "path": "/api/cn/broad/chinext.json",
       "url": "/api/cn/broad/chinext.json",
-      "modified": "2026-05-13T05:26:59.901Z",
-      "bytes": 145663
+      "modified": "2026-05-13T10:06:10.057Z",
+      "bytes": 246606
+    },
+    {
+      "key": "cn/broad/chinext-annual-returns",
+      "path": "/api/cn/broad/chinext-annual-returns.json",
+      "url": "/api/cn/broad/chinext-annual-returns.json",
+      "modified": "2026-05-13T10:06:10.059Z",
+      "bytes": 1102
+    },
+    {
+      "key": "cn/broad/chinext-drawdowns",
+      "path": "/api/cn/broad/chinext-drawdowns.json",
+      "url": "/api/cn/broad/chinext-drawdowns.json",
+      "modified": "2026-05-13T10:06:10.060Z",
+      "bytes": 249660
+    },
+    {
+      "key": "cn/broad/chinext-total-return",
+      "path": "/api/cn/broad/chinext-total-return.json",
+      "url": "/api/cn/broad/chinext-total-return.json",
+      "modified": "2026-05-13T10:06:10.058Z",
+      "bytes": 246694
+    },
+    {
+      "key": "cn/broad/concentration",
+      "path": "/api/cn/broad/concentration.json",
+      "url": "/api/cn/broad/concentration.json",
+      "modified": "2026-05-13T06:59:57.601Z",
+      "bytes": 1087
+    },
+    {
+      "key": "cn/broad/csi-dividend",
+      "path": "/api/cn/broad/csi-dividend.json",
+      "url": "/api/cn/broad/csi-dividend.json",
+      "modified": "2026-05-13T10:06:09.209Z",
+      "bytes": 331114
+    },
+    {
+      "key": "cn/broad/csi-dividend-annual-returns",
+      "path": "/api/cn/broad/csi-dividend-annual-returns.json",
+      "url": "/api/cn/broad/csi-dividend-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.212Z",
+      "bytes": 1381
+    },
+    {
+      "key": "cn/broad/csi-dividend-drawdowns",
+      "path": "/api/cn/broad/csi-dividend-drawdowns.json",
+      "url": "/api/cn/broad/csi-dividend-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.214Z",
+      "bytes": 339673
+    },
+    {
+      "key": "cn/broad/csi-dividend-total-return",
+      "path": "/api/cn/broad/csi-dividend-total-return.json",
+      "url": "/api/cn/broad/csi-dividend-total-return.json",
+      "modified": "2026-05-13T10:06:09.211Z",
+      "bytes": 331707
+    },
+    {
+      "key": "cn/broad/csi1000",
+      "path": "/api/cn/broad/csi1000.json",
+      "url": "/api/cn/broad/csi1000.json",
+      "modified": "2026-05-13T10:06:09.183Z",
+      "bytes": 179878
+    },
+    {
+      "key": "cn/broad/csi1000-annual-returns",
+      "path": "/api/cn/broad/csi1000-annual-returns.json",
+      "url": "/api/cn/broad/csi1000-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.184Z",
+      "bytes": 873
+    },
+    {
+      "key": "cn/broad/csi1000-drawdowns",
+      "path": "/api/cn/broad/csi1000-drawdowns.json",
+      "url": "/api/cn/broad/csi1000-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.186Z",
+      "bytes": 180545
+    },
+    {
+      "key": "cn/broad/csi1000-total-return",
+      "path": "/api/cn/broad/csi1000-total-return.json",
+      "url": "/api/cn/broad/csi1000-total-return.json",
+      "modified": "2026-05-13T10:06:09.184Z",
+      "bytes": 179913
     },
     {
       "key": "cn/broad/csi500",
       "path": "/api/cn/broad/csi500.json",
       "url": "/api/cn/broad/csi500.json",
-      "modified": "2026-05-13T05:26:59.903Z",
-      "bytes": 192584
+      "modified": "2026-05-13T10:06:09.165Z",
+      "bytes": 331080
+    },
+    {
+      "key": "cn/broad/csi500-annual-returns",
+      "path": "/api/cn/broad/csi500-annual-returns.json",
+      "url": "/api/cn/broad/csi500-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.169Z",
+      "bytes": 1376
+    },
+    {
+      "key": "cn/broad/csi500-drawdowns",
+      "path": "/api/cn/broad/csi500-drawdowns.json",
+      "url": "/api/cn/broad/csi500-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.171Z",
+      "bytes": 336517
+    },
+    {
+      "key": "cn/broad/csi500-total-return",
+      "path": "/api/cn/broad/csi500-total-return.json",
+      "url": "/api/cn/broad/csi500-total-return.json",
+      "modified": "2026-05-13T10:06:09.168Z",
+      "bytes": 331211
     },
     {
       "key": "cn/broad/davis-decomposition",
@@ -55,8 +167,43 @@
       "key": "cn/broad/hs300",
       "path": "/api/cn/broad/hs300.json",
       "url": "/api/cn/broad/hs300.json",
-      "modified": "2026-05-13T05:26:59.908Z",
-      "bytes": 193769
+      "modified": "2026-05-13T10:06:09.096Z",
+      "bytes": 331108
+    },
+    {
+      "key": "cn/broad/hs300-annual-returns",
+      "path": "/api/cn/broad/hs300-annual-returns.json",
+      "url": "/api/cn/broad/hs300-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.100Z",
+      "bytes": 1374
+    },
+    {
+      "key": "cn/broad/hs300-drawdowns",
+      "path": "/api/cn/broad/hs300-drawdowns.json",
+      "url": "/api/cn/broad/hs300-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.101Z",
+      "bytes": 338993
+    },
+    {
+      "key": "cn/broad/hs300-eps",
+      "path": "/api/cn/broad/hs300-eps.json",
+      "url": "/api/cn/broad/hs300-eps.json",
+      "modified": "2026-05-13T10:06:09.103Z",
+      "bytes": 1335
+    },
+    {
+      "key": "cn/broad/hs300-total-return",
+      "path": "/api/cn/broad/hs300-total-return.json",
+      "url": "/api/cn/broad/hs300-total-return.json",
+      "modified": "2026-05-13T10:06:09.100Z",
+      "bytes": 331155
+    },
+    {
+      "key": "cn/broad/hs300-valuation",
+      "path": "/api/cn/broad/hs300-valuation.json",
+      "url": "/api/cn/broad/hs300-valuation.json",
+      "modified": "2026-05-13T10:06:09.103Z",
+      "bytes": 2728
     },
     {
       "key": "cn/broad/intrayear-turbulence",
@@ -90,22 +237,85 @@
       "key": "cn/broad/shanghai-composite",
       "path": "/api/cn/broad/shanghai-composite.json",
       "url": "/api/cn/broad/shanghai-composite.json",
-      "modified": "2026-05-13T05:26:59.910Z",
-      "bytes": 242530
+      "modified": "2026-05-13T10:06:09.128Z",
+      "bytes": 398849
+    },
+    {
+      "key": "cn/broad/shanghai-composite-annual-returns",
+      "path": "/api/cn/broad/shanghai-composite-annual-returns.json",
+      "url": "/api/cn/broad/shanghai-composite-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.130Z",
+      "bytes": 938
+    },
+    {
+      "key": "cn/broad/shanghai-composite-drawdowns",
+      "path": "/api/cn/broad/shanghai-composite-drawdowns.json",
+      "url": "/api/cn/broad/shanghai-composite-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.131Z",
+      "bytes": 163197
+    },
+    {
+      "key": "cn/broad/shanghai-composite-total-return",
+      "path": "/api/cn/broad/shanghai-composite-total-return.json",
+      "url": "/api/cn/broad/shanghai-composite-total-return.json",
+      "modified": "2026-05-13T10:06:09.130Z",
+      "bytes": 157406
     },
     {
       "key": "cn/broad/shenzhen-component",
       "path": "/api/cn/broad/shenzhen-component.json",
       "url": "/api/cn/broad/shenzhen-component.json",
-      "modified": "2026-05-13T05:26:59.911Z",
-      "bytes": 242360
+      "modified": "2026-05-13T10:06:09.790Z",
+      "bytes": 551616
+    },
+    {
+      "key": "cn/broad/shenzhen-component-annual-returns",
+      "path": "/api/cn/broad/shenzhen-component-annual-returns.json",
+      "url": "/api/cn/broad/shenzhen-component-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.794Z",
+      "bytes": 2185
+    },
+    {
+      "key": "cn/broad/shenzhen-component-drawdowns",
+      "path": "/api/cn/broad/shenzhen-component-drawdowns.json",
+      "url": "/api/cn/broad/shenzhen-component-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.798Z",
+      "bytes": 549984
+    },
+    {
+      "key": "cn/broad/shenzhen-component-total-return",
+      "path": "/api/cn/broad/shenzhen-component-total-return.json",
+      "url": "/api/cn/broad/shenzhen-component-total-return.json",
+      "modified": "2026-05-13T10:06:09.794Z",
+      "bytes": 551704
     },
     {
       "key": "cn/broad/star50",
       "path": "/api/cn/broad/star50.json",
       "url": "/api/cn/broad/star50.json",
-      "modified": "2026-05-13T05:26:59.912Z",
-      "bytes": 48031
+      "modified": "2026-05-13T10:06:09.138Z",
+      "bytes": 97980
+    },
+    {
+      "key": "cn/broad/star50-annual-returns",
+      "path": "/api/cn/broad/star50-annual-returns.json",
+      "url": "/api/cn/broad/star50-annual-returns.json",
+      "modified": "2026-05-13T10:06:09.140Z",
+      "bytes": 588
+    },
+    {
+      "key": "cn/broad/star50-drawdowns",
+      "path": "/api/cn/broad/star50-drawdowns.json",
+      "url": "/api/cn/broad/star50-drawdowns.json",
+      "modified": "2026-05-13T10:06:09.141Z",
+      "bytes": 98972
+    },
+    {
+      "key": "cn/broad/star50-total-return",
+      "path": "/api/cn/broad/star50-total-return.json",
+      "url": "/api/cn/broad/star50-total-return.json",
+      "modified": "2026-05-13T10:06:09.139Z",
+      "bytes": 98127
     },
     {
       "key": "cn/broad/style-ratios",
@@ -227,6 +437,20 @@
       "bytes": 148552
     },
     {
+      "key": "cn/sectors/sector-drawdown",
+      "path": "/api/cn/sectors/sector-drawdown.json",
+      "url": "/api/cn/sectors/sector-drawdown.json",
+      "modified": "2026-05-13T07:00:41.130Z",
+      "bytes": 496
+    },
+    {
+      "key": "cn/sectors/sector-momentum",
+      "path": "/api/cn/sectors/sector-momentum.json",
+      "url": "/api/cn/sectors/sector-momentum.json",
+      "modified": "2026-05-13T07:00:29.852Z",
+      "bytes": 478
+    },
+    {
       "key": "cn/sectors/sector-valuation",
       "path": "/api/cn/sectors/sector-valuation.json",
       "url": "/api/cn/sectors/sector-valuation.json",
@@ -244,190 +468,204 @@
       "key": "us/dow/annual-returns",
       "path": "/api/us/dow/annual-returns.json",
       "url": "/api/us/dow/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.599Z",
-      "bytes": 5665
+      "modified": "2026-05-13T10:06:10.124Z",
+      "bytes": 5680
     },
     {
       "key": "us/dow/century",
       "path": "/api/us/dow/century.json",
       "url": "/api/us/dow/century.json",
-      "modified": "2026-05-13T06:28:10.597Z",
-      "bytes": 151
+      "modified": "2026-05-13T10:06:10.124Z",
+      "bytes": 153
     },
     {
       "key": "us/dow/drawdowns",
       "path": "/api/us/dow/drawdowns.json",
       "url": "/api/us/dow/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.599Z",
-      "bytes": 165
+      "modified": "2026-05-13T10:06:10.124Z",
+      "bytes": 188
     },
     {
       "key": "us/dow/valuation",
       "path": "/api/us/dow/valuation.json",
       "url": "/api/us/dow/valuation.json",
-      "modified": "2026-05-13T06:28:10.600Z",
-      "bytes": 136056
+      "modified": "2026-05-13T10:06:10.125Z",
+      "bytes": 136030
     },
     {
       "key": "us/fin/annual-returns",
       "path": "/api/us/fin/annual-returns.json",
       "url": "/api/us/fin/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.618Z",
-      "bytes": 1681
+      "modified": "2026-05-13T10:06:10.175Z",
+      "bytes": 1686
     },
     {
       "key": "us/fin/drawdowns",
       "path": "/api/us/fin/drawdowns.json",
       "url": "/api/us/fin/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.620Z",
-      "bytes": 86948
+      "modified": "2026-05-13T10:06:10.176Z",
+      "bytes": 141131
     },
     {
       "key": "us/fin/price",
       "path": "/api/us/fin/price.json",
       "url": "/api/us/fin/price.json",
-      "modified": "2026-05-13T06:28:10.618Z",
-      "bytes": 86774
+      "modified": "2026-05-13T10:06:10.175Z",
+      "bytes": 86789
     },
     {
       "key": "us/fin/valuation",
       "path": "/api/us/fin/valuation.json",
       "url": "/api/us/fin/valuation.json",
-      "modified": "2026-05-13T06:28:10.620Z",
-      "bytes": 72434
+      "modified": "2026-05-13T10:06:10.177Z",
+      "bytes": 72421
     },
     {
       "key": "us/mag7/drawdowns",
       "path": "/api/us/mag7/drawdowns.json",
       "url": "/api/us/mag7/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.623Z",
-      "bytes": 166
+      "modified": "2026-05-13T10:06:10.180Z",
+      "bytes": 184
     },
     {
       "key": "us/mag7/index",
       "path": "/api/us/mag7/index.json",
       "url": "/api/us/mag7/index.json",
-      "modified": "2026-05-13T06:28:10.623Z",
-      "bytes": 150
+      "modified": "2026-05-13T10:06:10.179Z",
+      "bytes": 153
     },
     {
       "key": "us/mag7/valuation",
       "path": "/api/us/mag7/valuation.json",
       "url": "/api/us/mag7/valuation.json",
-      "modified": "2026-05-13T06:28:10.624Z",
-      "bytes": 55320
+      "modified": "2026-05-13T10:06:10.181Z",
+      "bytes": 55312
     },
     {
       "key": "us/nasdaq/annual-returns",
       "path": "/api/us/nasdaq/annual-returns.json",
       "url": "/api/us/nasdaq/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.592Z",
-      "bytes": 3254
+      "modified": "2026-05-13T10:06:10.116Z",
+      "bytes": 3253
     },
     {
       "key": "us/nasdaq/composite",
       "path": "/api/us/nasdaq/composite.json",
       "url": "/api/us/nasdaq/composite.json",
-      "modified": "2026-05-13T06:28:10.591Z",
-      "bytes": 137271
+      "modified": "2026-05-13T10:06:10.116Z",
+      "bytes": 136335
     },
     {
       "key": "us/nasdaq/drawdowns",
       "path": "/api/us/nasdaq/drawdowns.json",
       "url": "/api/us/nasdaq/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.593Z",
-      "bytes": 136881
+      "modified": "2026-05-13T10:06:10.119Z",
+      "bytes": 209349
     },
     {
       "key": "us/nasdaq/valuation",
       "path": "/api/us/nasdaq/valuation.json",
       "url": "/api/us/nasdaq/valuation.json",
-      "modified": "2026-05-13T06:28:10.593Z",
-      "bytes": 102168
+      "modified": "2026-05-13T10:06:10.120Z",
+      "bytes": 102153
     },
     {
       "key": "us/semi/annual-returns",
       "path": "/api/us/semi/annual-returns.json",
       "url": "/api/us/semi/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.605Z",
-      "bytes": 2031
+      "modified": "2026-05-13T10:06:10.131Z",
+      "bytes": 2025
     },
     {
       "key": "us/semi/drawdowns",
       "path": "/api/us/semi/drawdowns.json",
       "url": "/api/us/semi/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.606Z",
-      "bytes": 100276
+      "modified": "2026-05-13T10:06:10.132Z",
+      "bytes": 166101
     },
     {
       "key": "us/semi/price",
       "path": "/api/us/semi/price.json",
       "url": "/api/us/semi/price.json",
-      "modified": "2026-05-13T06:28:10.605Z",
-      "bytes": 99149
+      "modified": "2026-05-13T10:06:10.131Z",
+      "bytes": 99574
     },
     {
       "key": "us/semi/valuation",
       "path": "/api/us/semi/valuation.json",
       "url": "/api/us/semi/valuation.json",
-      "modified": "2026-05-13T06:28:10.607Z",
-      "bytes": 76496
+      "modified": "2026-05-13T10:06:10.133Z",
+      "bytes": 76495
     },
     {
       "key": "us/sp500/annual-returns",
       "path": "/api/us/sp500/annual-returns.json",
       "url": "/api/us/sp500/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.583Z",
-      "bytes": 5655
+      "modified": "2026-05-13T10:06:10.101Z",
+      "bytes": 5469
     },
     {
       "key": "us/sp500/century",
       "path": "/api/us/sp500/century.json",
       "url": "/api/us/sp500/century.json",
-      "modified": "2026-05-13T06:28:10.582Z",
-      "bytes": 149
+      "modified": "2026-05-13T10:06:10.101Z",
+      "bytes": 71314
     },
     {
       "key": "us/sp500/drawdowns",
       "path": "/api/us/sp500/drawdowns.json",
       "url": "/api/us/sp500/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.583Z",
-      "bytes": 169
+      "modified": "2026-05-13T10:06:10.102Z",
+      "bytes": 84373
+    },
+    {
+      "key": "us/sp500/eps",
+      "path": "/api/us/sp500/eps.json",
+      "url": "/api/us/sp500/eps.json",
+      "modified": "2026-05-13T10:06:10.108Z",
+      "bytes": 70022
+    },
+    {
+      "key": "us/sp500/total-return",
+      "path": "/api/us/sp500/total-return.json",
+      "url": "/api/us/sp500/total-return.json",
+      "modified": "2026-05-13T10:06:10.109Z",
+      "bytes": 82963
     },
     {
       "key": "us/sp500/valuation",
       "path": "/api/us/sp500/valuation.json",
       "url": "/api/us/sp500/valuation.json",
-      "modified": "2026-05-13T06:28:10.585Z",
-      "bytes": 136042
+      "modified": "2026-05-13T10:06:10.106Z",
+      "bytes": 144248
     },
     {
       "key": "us/xlk/annual-returns",
       "path": "/api/us/xlk/annual-returns.json",
       "url": "/api/us/xlk/annual-returns.json",
-      "modified": "2026-05-13T06:28:10.612Z",
-      "bytes": 1683
+      "modified": "2026-05-13T10:06:10.138Z",
+      "bytes": 1691
     },
     {
       "key": "us/xlk/drawdowns",
       "path": "/api/us/xlk/drawdowns.json",
       "url": "/api/us/xlk/drawdowns.json",
-      "modified": "2026-05-13T06:28:10.613Z",
-      "bytes": 86524
+      "modified": "2026-05-13T10:06:10.139Z",
+      "bytes": 136334
     },
     {
       "key": "us/xlk/price",
       "path": "/api/us/xlk/price.json",
       "url": "/api/us/xlk/price.json",
-      "modified": "2026-05-13T06:28:10.611Z",
-      "bytes": 86784
+      "modified": "2026-05-13T10:06:10.137Z",
+      "bytes": 86802
     },
     {
       "key": "us/xlk/valuation",
       "path": "/api/us/xlk/valuation.json",
       "url": "/api/us/xlk/valuation.json",
-      "modified": "2026-05-13T06:28:10.613Z",
-      "bytes": 72446
+      "modified": "2026-05-13T10:06:10.140Z",
+      "bytes": 72445
     }
   ]
 }

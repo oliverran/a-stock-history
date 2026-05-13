@@ -1,4501 +1,4501 @@
 {
   "meta": {
     "id": "valuation",
-    "name": "Semiconductors Valuation",
+    "name": "半导体估值",
     "type": "valuation",
-    "description": "Valuation bands (sample)"
+    "description": "估值带（示例）"
   },
   "series": [
     {
       "date": "1998-01-01",
-      "value": 21.91,
+      "value": 21.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-02",
-      "value": 21.88,
+      "value": 21.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-05",
-      "value": 21.79,
+      "value": 21.98,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-06",
-      "value": 21.85,
+      "value": 22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-07",
-      "value": 21.91,
+      "value": 22.05,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-08",
-      "value": 21.85,
+      "value": 21.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-09",
-      "value": 21.86,
+      "value": 21.93,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-12",
-      "value": 21.85,
+      "value": 21.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-13",
-      "value": 21.84,
+      "value": 22.05,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-14",
-      "value": 21.87,
+      "value": 22.12,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-15",
-      "value": 21.91,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-16",
-      "value": 21.82,
+      "value": 22.18,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-19",
-      "value": 21.85,
+      "value": 22.15,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-20",
-      "value": 21.9,
+      "value": 22.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-21",
-      "value": 21.8,
+      "value": 22.11,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-22",
-      "value": 21.8,
+      "value": 22.14,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-01-23",
-      "value": 21.81,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-01-26",
-      "value": 21.71,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-01-27",
-      "value": 21.67,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-01-28",
-      "value": 21.67,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-01-29",
-      "value": 21.62,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-01-30",
-      "value": 21.53,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-02",
-      "value": 21.61,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-03",
-      "value": 21.61,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-04",
-      "value": 21.7,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-05",
-      "value": 21.8,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-06",
-      "value": 21.75,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-09",
-      "value": 21.73,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-10",
-      "value": 21.82,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-11",
-      "value": 21.74,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-12",
-      "value": 21.67,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-13",
-      "value": 21.78,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-16",
-      "value": 21.73,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-17",
-      "value": 21.72,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-18",
-      "value": 21.77,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-19",
-      "value": 21.84,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-20",
-      "value": 21.76,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-23",
-      "value": 21.8,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-24",
-      "value": 21.86,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-25",
-      "value": 21.85,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-26",
-      "value": 21.85,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-02-27",
-      "value": 21.85,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-03-02",
-      "value": 21.96,
-      "mean": 22,
-      "plus1": 32,
-      "minus1": 16
-    },
-    {
-      "date": "1998-03-03",
       "value": 22.06,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
+      "date": "1998-01-26",
+      "value": 22.08,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-01-27",
+      "value": 22.08,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-01-28",
+      "value": 22.07,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-01-29",
+      "value": 22.16,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-01-30",
+      "value": 22.25,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-02",
+      "value": 22.2,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-03",
+      "value": 22.25,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-04",
+      "value": 22.19,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-05",
+      "value": 22.16,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-06",
+      "value": 22.17,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-09",
+      "value": 22.23,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-10",
+      "value": 22.22,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-11",
+      "value": 22.32,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-12",
+      "value": 22.43,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-13",
+      "value": 22.38,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-16",
+      "value": 22.36,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-17",
+      "value": 22.31,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-18",
+      "value": 22.32,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-19",
+      "value": 22.43,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-20",
+      "value": 22.49,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-23",
+      "value": 22.56,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-24",
+      "value": 22.57,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-25",
+      "value": 22.51,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-26",
+      "value": 22.48,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-02-27",
+      "value": 22.45,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-03-02",
+      "value": 22.53,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
+      "date": "1998-03-03",
+      "value": 22.42,
+      "mean": 22,
+      "plus1": 32,
+      "minus1": 16
+    },
+    {
       "date": "1998-03-04",
-      "value": 21.97,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-05",
-      "value": 21.9,
+      "value": 22.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-06",
-      "value": 21.81,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-09",
-      "value": 21.72,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-10",
-      "value": 21.72,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-11",
-      "value": 21.64,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-12",
-      "value": 21.69,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-13",
-      "value": 21.71,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-16",
-      "value": 21.8,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-17",
-      "value": 21.86,
+      "value": 22.62,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-18",
-      "value": 21.83,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-19",
-      "value": 21.73,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-20",
-      "value": 21.71,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-23",
-      "value": 21.82,
+      "value": 22.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-24",
-      "value": 21.76,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-25",
-      "value": 21.71,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-26",
-      "value": 21.67,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-27",
-      "value": 21.74,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-30",
-      "value": 21.7,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-03-31",
-      "value": 21.66,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-01",
-      "value": 21.63,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-02",
-      "value": 21.55,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-03",
-      "value": 21.45,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-06",
-      "value": 21.4,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-07",
-      "value": 21.32,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-08",
-      "value": 21.35,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-09",
-      "value": 21.35,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-10",
-      "value": 21.3,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-13",
-      "value": 21.24,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-14",
-      "value": 21.25,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-15",
-      "value": 21.26,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-16",
-      "value": 21.23,
+      "value": 22.7,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-17",
-      "value": 21.26,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-20",
-      "value": 21.3,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-21",
-      "value": 21.39,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-22",
-      "value": 21.29,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-23",
-      "value": 21.29,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-24",
-      "value": 21.4,
+      "value": 22.92,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-27",
-      "value": 21.3,
+      "value": 22.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-28",
-      "value": 21.39,
+      "value": 22.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-29",
-      "value": 21.44,
+      "value": 22.83,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-04-30",
-      "value": 21.36,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-01",
-      "value": 21.31,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-04",
-      "value": 21.36,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-05",
-      "value": 21.39,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-06",
-      "value": 21.39,
+      "value": 22.7,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-07",
-      "value": 21.29,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-08",
-      "value": 21.29,
+      "value": 22.75,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-11",
-      "value": 21.38,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-12",
-      "value": 21.31,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-13",
-      "value": 21.23,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-14",
-      "value": 21.2,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-15",
-      "value": 21.21,
+      "value": 22.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-18",
-      "value": 21.25,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-19",
-      "value": 21.21,
+      "value": 22.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-20",
-      "value": 21.13,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-21",
-      "value": 21.08,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-22",
-      "value": 21.17,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-25",
-      "value": 21.13,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-26",
-      "value": 21.21,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-27",
-      "value": 21.19,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-28",
-      "value": 21.19,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-05-29",
-      "value": 21.12,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-01",
-      "value": 21.13,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-02",
-      "value": 21.19,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-03",
-      "value": 21.22,
+      "value": 22.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-04",
-      "value": 21.27,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-05",
-      "value": 21.36,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-08",
-      "value": 21.4,
+      "value": 22.42,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-09",
-      "value": 21.32,
+      "value": 22.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-10",
-      "value": 21.35,
+      "value": 22.38,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-11",
-      "value": 21.42,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-12",
-      "value": 21.43,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-15",
-      "value": 21.36,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-16",
-      "value": 21.32,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-17",
-      "value": 21.23,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-18",
-      "value": 21.18,
+      "value": 22.78,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-19",
-      "value": 21.09,
+      "value": 22.87,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-22",
-      "value": 21.05,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-23",
-      "value": 21.11,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-24",
-      "value": 21.09,
+      "value": 22.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-25",
-      "value": 21.09,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-26",
-      "value": 20.99,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-29",
-      "value": 20.89,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-06-30",
-      "value": 20.9,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-01",
-      "value": 20.82,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-02",
-      "value": 20.73,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-03",
-      "value": 20.7,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-06",
-      "value": 20.73,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-07",
-      "value": 20.73,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-08",
-      "value": 20.64,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-09",
-      "value": 20.69,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-10",
-      "value": 20.73,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-13",
-      "value": 20.76,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-14",
-      "value": 20.74,
+      "value": 22.42,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-15",
-      "value": 20.77,
+      "value": 22.33,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-16",
-      "value": 20.84,
+      "value": 22.41,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-17",
-      "value": 20.87,
+      "value": 22.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-20",
-      "value": 20.81,
+      "value": 22.33,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-21",
-      "value": 20.91,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-22",
-      "value": 20.98,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-23",
-      "value": 20.99,
+      "value": 22.23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-24",
-      "value": 21.09,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-27",
-      "value": 21.08,
+      "value": 22.13,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-28",
-      "value": 21.03,
+      "value": 22.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-29",
-      "value": 20.98,
+      "value": 22.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-30",
-      "value": 21.02,
+      "value": 22.11,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-07-31",
-      "value": 21.08,
+      "value": 22.03,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-03",
-      "value": 21.13,
+      "value": 21.93,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-04",
-      "value": 21.14,
+      "value": 22.04,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-05",
-      "value": 21.2,
+      "value": 22.14,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-06",
-      "value": 21.23,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-07",
-      "value": 21.29,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-10",
-      "value": 21.28,
+      "value": 22.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-11",
-      "value": 21.23,
+      "value": 22.4,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-12",
-      "value": 21.16,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-13",
-      "value": 21.08,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-14",
-      "value": 21.12,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-17",
-      "value": 21.05,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-18",
-      "value": 20.96,
+      "value": 22.62,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-19",
-      "value": 20.98,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-20",
-      "value": 21,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-21",
-      "value": 21.11,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-24",
-      "value": 21.14,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-25",
-      "value": 21.13,
+      "value": 22.62,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-26",
-      "value": 21.14,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-27",
-      "value": 21.15,
+      "value": 22.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-28",
-      "value": 21.13,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-08-31",
-      "value": 21.21,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-01",
-      "value": 21.16,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-02",
-      "value": 21.14,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-03",
-      "value": 21.19,
+      "value": 22.75,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-04",
-      "value": 21.23,
+      "value": 22.87,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-07",
-      "value": 21.31,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-08",
-      "value": 21.37,
+      "value": 22.83,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-09",
-      "value": 21.43,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-10",
-      "value": 21.34,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-11",
-      "value": 21.29,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-14",
-      "value": 21.39,
+      "value": 22.7,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-15",
-      "value": 21.4,
+      "value": 22.7,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-16",
-      "value": 21.5,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-17",
-      "value": 21.55,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-18",
-      "value": 21.66,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-21",
-      "value": 21.76,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-22",
-      "value": 21.75,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-23",
-      "value": 21.65,
+      "value": 22.63,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-24",
-      "value": 21.67,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-25",
-      "value": 21.74,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-28",
-      "value": 21.65,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-29",
-      "value": 21.76,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-09-30",
-      "value": 21.73,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-01",
-      "value": 21.81,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-02",
-      "value": 21.77,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-05",
-      "value": 21.75,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-06",
-      "value": 21.78,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-07",
-      "value": 21.86,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-08",
-      "value": 21.87,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-09",
-      "value": 21.79,
+      "value": 22.7,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-12",
-      "value": 21.79,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-13",
-      "value": 21.85,
+      "value": 22.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-14",
-      "value": 21.81,
+      "value": 22.92,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-15",
-      "value": 21.72,
+      "value": 22.92,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-16",
-      "value": 21.75,
+      "value": 22.96,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-19",
-      "value": 21.8,
+      "value": 22.93,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-20",
-      "value": 21.76,
+      "value": 23.03,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-21",
-      "value": 21.81,
+      "value": 23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-22",
-      "value": 21.78,
+      "value": 22.95,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-23",
-      "value": 21.74,
+      "value": 23.01,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-26",
-      "value": 21.75,
+      "value": 23.05,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-27",
-      "value": 21.68,
+      "value": 23.06,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-28",
-      "value": 21.71,
+      "value": 23.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-29",
-      "value": 21.66,
+      "value": 23.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-10-30",
-      "value": 21.7,
+      "value": 23.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-02",
-      "value": 21.64,
+      "value": 23.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-03",
-      "value": 21.56,
+      "value": 23.11,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-04",
-      "value": 21.55,
+      "value": 23.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-05",
-      "value": 21.61,
+      "value": 23.2,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-06",
-      "value": 21.64,
+      "value": 23.23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-09",
-      "value": 21.61,
+      "value": 23.29,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-10",
-      "value": 21.55,
+      "value": 23.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-11",
-      "value": 21.48,
+      "value": 23.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-12",
-      "value": 21.37,
+      "value": 23.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-13",
-      "value": 21.31,
+      "value": 23.34,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-16",
-      "value": 21.4,
+      "value": 23.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-17",
-      "value": 21.31,
+      "value": 23.26,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-18",
-      "value": 21.25,
+      "value": 23.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-19",
-      "value": 21.16,
+      "value": 23.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-20",
-      "value": 21.08,
+      "value": 23.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-23",
-      "value": 21.06,
+      "value": 23.14,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-24",
-      "value": 21.03,
+      "value": 23.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-25",
-      "value": 20.93,
+      "value": 23.18,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-26",
-      "value": 21.01,
+      "value": 23.2,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-27",
-      "value": 20.91,
+      "value": 23.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-11-30",
-      "value": 20.98,
+      "value": 23.13,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-01",
-      "value": 20.94,
+      "value": 23.09,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-02",
-      "value": 21,
+      "value": 23.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-03",
-      "value": 20.91,
+      "value": 23.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-04",
-      "value": 20.98,
+      "value": 23.27,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-07",
-      "value": 20.88,
+      "value": 23.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-08",
-      "value": 20.82,
+      "value": 23.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-09",
-      "value": 20.87,
+      "value": 23.42,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-10",
-      "value": 20.8,
+      "value": 23.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-11",
-      "value": 20.73,
+      "value": 23.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-14",
-      "value": 20.65,
+      "value": 23.4,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-15",
-      "value": 20.56,
+      "value": 23.29,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-16",
-      "value": 20.57,
+      "value": 23.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-17",
-      "value": 20.49,
+      "value": 23.26,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-18",
-      "value": 20.53,
+      "value": 23.23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-21",
-      "value": 20.59,
+      "value": 23.2,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-22",
-      "value": 20.59,
+      "value": 23.15,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-23",
-      "value": 20.69,
+      "value": 23.07,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-24",
-      "value": 20.73,
+      "value": 22.97,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-25",
-      "value": 20.65,
+      "value": 22.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-28",
-      "value": 20.75,
+      "value": 22.89,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-29",
-      "value": 20.69,
+      "value": 22.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-30",
-      "value": 20.79,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1998-12-31",
-      "value": 20.83,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-01",
-      "value": 20.9,
+      "value": 22.78,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-04",
-      "value": 20.89,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-05",
-      "value": 20.93,
+      "value": 22.85,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-06",
-      "value": 20.98,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-07",
-      "value": 20.89,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-08",
-      "value": 20.84,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-11",
-      "value": 20.76,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-12",
-      "value": 20.69,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-13",
-      "value": 20.69,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-14",
-      "value": 20.62,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-15",
-      "value": 20.52,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-18",
-      "value": 20.42,
+      "value": 22.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-19",
-      "value": 20.53,
+      "value": 22.41,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-20",
-      "value": 20.55,
+      "value": 22.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-21",
-      "value": 20.52,
+      "value": 22.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-22",
-      "value": 20.49,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-25",
-      "value": 20.56,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-26",
-      "value": 20.54,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-27",
-      "value": 20.62,
+      "value": 22.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-28",
-      "value": 20.69,
+      "value": 22.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-01-29",
-      "value": 20.72,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-01",
-      "value": 20.73,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-02",
-      "value": 20.66,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-03",
-      "value": 20.61,
+      "value": 22.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-04",
-      "value": 20.57,
+      "value": 22.41,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-05",
-      "value": 20.65,
+      "value": 22.39,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-08",
-      "value": 20.6,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-09",
-      "value": 20.51,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-10",
-      "value": 20.44,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-11",
-      "value": 20.42,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-12",
-      "value": 20.34,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-15",
-      "value": 20.42,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-16",
-      "value": 20.43,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-17",
-      "value": 20.43,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-18",
-      "value": 20.38,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-19",
-      "value": 20.3,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-22",
-      "value": 20.36,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-23",
-      "value": 20.29,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-24",
-      "value": 20.19,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-25",
-      "value": 20.16,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-02-26",
-      "value": 20.2,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-01",
-      "value": 20.28,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-02",
-      "value": 20.35,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-03",
-      "value": 20.3,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-04",
-      "value": 20.27,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-05",
-      "value": 20.36,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-08",
-      "value": 20.27,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-09",
-      "value": 20.23,
+      "value": 22.63,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-10",
-      "value": 20.25,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-11",
-      "value": 20.19,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-12",
-      "value": 20.15,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-15",
-      "value": 20.16,
+      "value": 22.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-16",
-      "value": 20.08,
+      "value": 22.83,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-17",
-      "value": 20.18,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-18",
-      "value": 20.16,
+      "value": 22.87,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-19",
-      "value": 20.11,
+      "value": 22.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-22",
-      "value": 20.13,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-23",
-      "value": 20.12,
+      "value": 22.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-24",
-      "value": 20.08,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-25",
-      "value": 20.06,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-26",
-      "value": 20.03,
+      "value": 22.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-29",
-      "value": 20.06,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-30",
-      "value": 19.96,
+      "value": 22.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-03-31",
-      "value": 19.95,
+      "value": 23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-01",
-      "value": 19.88,
+      "value": 23.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-02",
-      "value": 19.98,
+      "value": 23.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-05",
-      "value": 20.05,
+      "value": 23.04,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-06",
-      "value": 20.01,
+      "value": 23.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-07",
-      "value": 19.95,
+      "value": 23.15,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-08",
-      "value": 19.95,
+      "value": 23.04,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-09",
-      "value": 19.98,
+      "value": 23.03,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-12",
-      "value": 20.02,
+      "value": 22.97,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-13",
-      "value": 19.98,
+      "value": 23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-14",
-      "value": 20.02,
+      "value": 23.02,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-15",
-      "value": 19.99,
+      "value": 22.93,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-16",
-      "value": 19.91,
+      "value": 23.03,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-19",
-      "value": 19.9,
+      "value": 23.1,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-20",
-      "value": 19.81,
+      "value": 23.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-21",
-      "value": 19.77,
+      "value": 23.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-22",
-      "value": 19.83,
+      "value": 23.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-23",
-      "value": 19.85,
+      "value": 23.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-26",
-      "value": 19.82,
+      "value": 23.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-27",
-      "value": 19.9,
+      "value": 23.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-28",
-      "value": 19.93,
+      "value": 23.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-29",
-      "value": 19.91,
+      "value": 23.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-04-30",
-      "value": 19.95,
+      "value": 23.36,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-03",
-      "value": 19.88,
+      "value": 23.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-04",
-      "value": 19.82,
+      "value": 23.39,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-05",
-      "value": 19.76,
+      "value": 23.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-06",
-      "value": 19.75,
+      "value": 23.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-07",
-      "value": 19.67,
+      "value": 23.38,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-10",
-      "value": 19.68,
+      "value": 23.34,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-11",
-      "value": 19.76,
+      "value": 23.38,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-12",
-      "value": 19.77,
+      "value": 23.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-13",
-      "value": 19.84,
+      "value": 23.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-14",
-      "value": 19.79,
+      "value": 23.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-17",
-      "value": 19.8,
+      "value": 23.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-18",
-      "value": 19.82,
+      "value": 23.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-19",
-      "value": 19.78,
+      "value": 23.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-20",
-      "value": 19.87,
+      "value": 23.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-21",
-      "value": 19.92,
+      "value": 23.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-24",
-      "value": 19.94,
+      "value": 23.86,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-25",
-      "value": 19.98,
+      "value": 23.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-26",
-      "value": 19.9,
+      "value": 23.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-27",
-      "value": 19.94,
+      "value": 23.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-28",
-      "value": 19.98,
+      "value": 23.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-05-31",
-      "value": 19.92,
+      "value": 23.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-01",
-      "value": 19.83,
+      "value": 23.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-02",
-      "value": 19.9,
+      "value": 23.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-03",
-      "value": 19.86,
+      "value": 23.62,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-04",
-      "value": 19.79,
+      "value": 23.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-07",
-      "value": 19.78,
+      "value": 23.62,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-08",
-      "value": 19.78,
+      "value": 23.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-09",
-      "value": 19.74,
+      "value": 23.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-10",
-      "value": 19.77,
+      "value": 23.89,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-11",
-      "value": 19.75,
+      "value": 23.83,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-14",
-      "value": 19.77,
+      "value": 23.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-15",
-      "value": 19.68,
+      "value": 23.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-16",
-      "value": 19.71,
+      "value": 23.67,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-17",
-      "value": 19.62,
+      "value": 23.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-18",
-      "value": 19.53,
+      "value": 23.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-21",
-      "value": 19.54,
+      "value": 23.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-22",
-      "value": 19.5,
+      "value": 23.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-23",
-      "value": 19.58,
+      "value": 23.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-24",
-      "value": 19.67,
+      "value": 23.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-25",
-      "value": 19.61,
+      "value": 23.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-28",
-      "value": 19.54,
+      "value": 23.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-29",
-      "value": 19.49,
+      "value": 23.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-06-30",
-      "value": 19.44,
+      "value": 23.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-01",
-      "value": 19.37,
+      "value": 23.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-02",
-      "value": 19.4,
+      "value": 23.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-05",
-      "value": 19.31,
+      "value": 23.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-06",
-      "value": 19.31,
+      "value": 23.27,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-07",
-      "value": 19.29,
+      "value": 23.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-08",
-      "value": 19.25,
+      "value": 23.27,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-09",
-      "value": 19.25,
+      "value": 23.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-12",
-      "value": 19.25,
+      "value": 23.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-13",
-      "value": 19.29,
+      "value": 23.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-14",
-      "value": 19.21,
+      "value": 23.14,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-15",
-      "value": 19.14,
+      "value": 23.04,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-16",
-      "value": 19.15,
+      "value": 22.96,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-19",
-      "value": 19.17,
+      "value": 22.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-20",
-      "value": 19.23,
+      "value": 23.01,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-21",
-      "value": 19.32,
+      "value": 22.99,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-22",
-      "value": 19.3,
+      "value": 22.89,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-23",
-      "value": 19.22,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-26",
-      "value": 19.16,
+      "value": 22.87,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-27",
-      "value": 19.21,
+      "value": 22.96,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-28",
-      "value": 19.17,
+      "value": 22.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-29",
-      "value": 19.15,
+      "value": 22.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-07-30",
-      "value": 19.18,
+      "value": 22.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-02",
-      "value": 19.18,
+      "value": 22.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-03",
-      "value": 19.2,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-04",
-      "value": 19.26,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-05",
-      "value": 19.26,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-06",
-      "value": 19.28,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-09",
-      "value": 19.35,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-10",
-      "value": 19.35,
+      "value": 22.63,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-11",
-      "value": 19.38,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-12",
-      "value": 19.29,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-13",
-      "value": 19.32,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-16",
-      "value": 19.42,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-17",
-      "value": 19.4,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-18",
-      "value": 19.47,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-19",
-      "value": 19.48,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-20",
-      "value": 19.47,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-23",
-      "value": 19.52,
+      "value": 22.73,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-24",
-      "value": 19.54,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-25",
-      "value": 19.49,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-26",
-      "value": 19.42,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-27",
-      "value": 19.43,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-30",
-      "value": 19.45,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-08-31",
-      "value": 19.46,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-01",
-      "value": 19.43,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-02",
-      "value": 19.4,
+      "value": 22.75,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-03",
-      "value": 19.4,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-06",
-      "value": 19.32,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-07",
-      "value": 19.38,
+      "value": 22.92,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-08",
-      "value": 19.35,
+      "value": 22.98,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-09",
-      "value": 19.34,
+      "value": 23.09,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-10",
-      "value": 19.3,
+      "value": 23.01,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-13",
-      "value": 19.35,
+      "value": 22.96,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-14",
-      "value": 19.41,
+      "value": 22.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-15",
-      "value": 19.5,
+      "value": 22.96,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-16",
-      "value": 19.41,
+      "value": 22.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-17",
-      "value": 19.33,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-20",
-      "value": 19.39,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-21",
-      "value": 19.43,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-22",
-      "value": 19.39,
+      "value": 22.84,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-23",
-      "value": 19.45,
+      "value": 22.86,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-24",
-      "value": 19.49,
+      "value": 22.86,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-27",
-      "value": 19.59,
+      "value": 22.98,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-28",
-      "value": 19.55,
+      "value": 22.93,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-29",
-      "value": 19.56,
+      "value": 23.04,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-09-30",
-      "value": 19.53,
+      "value": 22.95,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-01",
-      "value": 19.47,
+      "value": 22.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-04",
-      "value": 19.44,
+      "value": 22.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-05",
-      "value": 19.47,
+      "value": 22.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-06",
-      "value": 19.55,
+      "value": 22.85,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-07",
-      "value": 19.65,
+      "value": 22.81,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-08",
-      "value": 19.66,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-11",
-      "value": 19.74,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-12",
-      "value": 19.82,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-13",
-      "value": 19.82,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-14",
-      "value": 19.9,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-15",
-      "value": 19.9,
+      "value": 22.6,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-18",
-      "value": 19.9,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-19",
-      "value": 19.95,
+      "value": 22.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-20",
-      "value": 19.96,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-21",
-      "value": 19.88,
+      "value": 22.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-22",
-      "value": 19.81,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-25",
-      "value": 19.74,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-26",
-      "value": 19.77,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-27",
-      "value": 19.68,
+      "value": 22.39,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-28",
-      "value": 19.65,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-10-29",
-      "value": 19.58,
+      "value": 22.38,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-01",
-      "value": 19.55,
+      "value": 22.39,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-02",
-      "value": 19.64,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-03",
-      "value": 19.57,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-04",
-      "value": 19.61,
+      "value": 22.34,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-05",
-      "value": 19.56,
+      "value": 22.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-08",
-      "value": 19.58,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-09",
-      "value": 19.53,
+      "value": 22.33,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-10",
-      "value": 19.49,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-11",
-      "value": 19.53,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-12",
-      "value": 19.52,
+      "value": 22.14,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-15",
-      "value": 19.62,
+      "value": 22.09,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-16",
-      "value": 19.71,
+      "value": 22.11,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-17",
-      "value": 19.72,
+      "value": 22.18,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-18",
-      "value": 19.7,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-19",
-      "value": 19.71,
+      "value": 22.29,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-22",
-      "value": 19.78,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-23",
-      "value": 19.82,
+      "value": 22.39,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-24",
-      "value": 19.74,
+      "value": 22.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-25",
-      "value": 19.74,
+      "value": 22.29,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-26",
-      "value": 19.77,
+      "value": 22.29,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-29",
-      "value": 19.69,
+      "value": 22.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-11-30",
-      "value": 19.64,
+      "value": 22.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-01",
-      "value": 19.72,
+      "value": 22.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-02",
-      "value": 19.77,
+      "value": 22.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-03",
-      "value": 19.79,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-06",
-      "value": 19.75,
+      "value": 22.33,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-07",
-      "value": 19.72,
+      "value": 22.36,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-08",
-      "value": 19.78,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-09",
-      "value": 19.84,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-10",
-      "value": 19.8,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-13",
-      "value": 19.83,
+      "value": 22.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-14",
-      "value": 19.84,
+      "value": 22.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-15",
-      "value": 19.84,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-16",
-      "value": 19.93,
+      "value": 22.11,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-17",
-      "value": 19.86,
+      "value": 22.03,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-20",
-      "value": 19.83,
+      "value": 22.09,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-21",
-      "value": 19.89,
+      "value": 22.18,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-22",
-      "value": 19.93,
+      "value": 22.2,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-23",
-      "value": 19.87,
+      "value": 22.31,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-24",
-      "value": 19.88,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-27",
-      "value": 19.9,
+      "value": 22.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-28",
-      "value": 19.9,
+      "value": 22.41,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-29",
-      "value": 19.83,
+      "value": 22.43,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-30",
-      "value": 19.92,
+      "value": 22.49,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "1999-12-31",
-      "value": 20.01,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-03",
-      "value": 20.05,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-04",
-      "value": 20.06,
+      "value": 22.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-05",
-      "value": 20.05,
+      "value": 22.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-06",
-      "value": 20.06,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-07",
-      "value": 20.12,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-10",
-      "value": 20.1,
+      "value": 22.27,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-11",
-      "value": 20.19,
+      "value": 22.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-12",
-      "value": 20.19,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-13",
-      "value": 20.16,
+      "value": 22.51,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-14",
-      "value": 20.13,
+      "value": 22.46,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-17",
-      "value": 20.14,
+      "value": 22.36,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-18",
-      "value": 20.05,
+      "value": 22.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-19",
-      "value": 20.11,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-20",
-      "value": 20.04,
+      "value": 22.47,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-21",
-      "value": 20,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-24",
-      "value": 19.99,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-25",
-      "value": 19.91,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-26",
-      "value": 19.9,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-27",
-      "value": 19.85,
+      "value": 22.74,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-28",
-      "value": 19.88,
+      "value": 22.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-01-31",
-      "value": 19.8,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-01",
-      "value": 19.71,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-02",
-      "value": 19.75,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-03",
-      "value": 19.73,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-04",
-      "value": 19.7,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-07",
-      "value": 19.72,
+      "value": 22.69,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-08",
-      "value": 19.73,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-09",
-      "value": 19.79,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-10",
-      "value": 19.85,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-11",
-      "value": 19.8,
+      "value": 22.45,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-14",
-      "value": 19.75,
+      "value": 22.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-15",
-      "value": 19.7,
+      "value": 22.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-16",
-      "value": 19.62,
+      "value": 22.36,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-17",
-      "value": 19.55,
+      "value": 22.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-18",
-      "value": 19.56,
+      "value": 22.15,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-21",
-      "value": 19.56,
+      "value": 22.06,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-22",
-      "value": 19.47,
+      "value": 21.97,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-23",
-      "value": 19.51,
+      "value": 21.88,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-24",
-      "value": 19.54,
+      "value": 21.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-25",
-      "value": 19.53,
+      "value": 21.99,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-28",
-      "value": 19.5,
+      "value": 21.9,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-02-29",
-      "value": 19.44,
+      "value": 21.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-01",
-      "value": 19.5,
+      "value": 21.85,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-02",
-      "value": 19.55,
+      "value": 21.94,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-03",
-      "value": 19.47,
+      "value": 21.99,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-06",
-      "value": 19.45,
+      "value": 22.02,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-07",
-      "value": 19.45,
+      "value": 22.08,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-08",
-      "value": 19.52,
+      "value": 22.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-09",
-      "value": 19.54,
+      "value": 22.23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-10",
-      "value": 19.63,
+      "value": 22.32,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-13",
-      "value": 19.55,
+      "value": 22.23,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-14",
-      "value": 19.46,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-15",
-      "value": 19.46,
+      "value": 22.18,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-16",
-      "value": 19.37,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-17",
-      "value": 19.33,
+      "value": 22.25,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-20",
-      "value": 19.38,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-21",
-      "value": 19.46,
+      "value": 22.24,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-22",
-      "value": 19.55,
+      "value": 22.28,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-23",
-      "value": 19.63,
+      "value": 22.35,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-24",
-      "value": 19.67,
+      "value": 22.26,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-27",
-      "value": 19.62,
+      "value": 22.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-28",
-      "value": 19.71,
+      "value": 22.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-29",
-      "value": 19.8,
+      "value": 22.26,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-30",
-      "value": 19.84,
+      "value": 22.2,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-03-31",
-      "value": 19.91,
+      "value": 22.21,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-03",
-      "value": 19.85,
+      "value": 22.13,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-04",
-      "value": 19.91,
+      "value": 22.06,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-05",
-      "value": 19.94,
+      "value": 22.12,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-06",
-      "value": 19.89,
+      "value": 22.12,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-07",
-      "value": 19.91,
+      "value": 22.16,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-10",
-      "value": 19.96,
+      "value": 22.17,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-11",
-      "value": 20.01,
+      "value": 22.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-12",
-      "value": 20.03,
+      "value": 22.22,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-13",
-      "value": 20.11,
+      "value": 22.12,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-14",
-      "value": 20.08,
+      "value": 22.1,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-17",
-      "value": 20.05,
+      "value": 22.19,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-18",
-      "value": 20.09,
+      "value": 22.3,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-19",
-      "value": 20.1,
+      "value": 22.37,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-20",
-      "value": 20.08,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-21",
-      "value": 20.09,
+      "value": 22.52,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-24",
-      "value": 20.13,
+      "value": 22.5,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-25",
-      "value": 20.09,
+      "value": 22.56,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-26",
-      "value": 20.04,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-27",
-      "value": 20.08,
+      "value": 22.58,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-04-28",
-      "value": 19.99,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-01",
-      "value": 20.05,
+      "value": 22.72,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-02",
-      "value": 20.15,
+      "value": 22.81,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-03",
-      "value": 20.24,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-04",
-      "value": 20.24,
+      "value": 22.76,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-05",
-      "value": 20.26,
+      "value": 22.81,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-08",
-      "value": 20.26,
+      "value": 22.82,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-09",
-      "value": 20.27,
+      "value": 22.85,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-10",
-      "value": 20.2,
+      "value": 22.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-11",
-      "value": 20.2,
+      "value": 22.91,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-12",
-      "value": 20.21,
+      "value": 22.86,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-15",
-      "value": 20.21,
+      "value": 22.79,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-16",
-      "value": 20.26,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-17",
-      "value": 20.34,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-18",
-      "value": 20.37,
+      "value": 22.8,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-19",
-      "value": 20.38,
+      "value": 22.78,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-22",
-      "value": 20.42,
+      "value": 22.77,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-23",
-      "value": 20.35,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-24",
-      "value": 20.26,
+      "value": 22.71,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-25",
-      "value": 20.26,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-26",
-      "value": 20.2,
+      "value": 22.54,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-29",
-      "value": 20.31,
+      "value": 22.55,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-30",
-      "value": 20.21,
+      "value": 22.63,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-05-31",
-      "value": 20.18,
+      "value": 22.66,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-01",
-      "value": 20.17,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-02",
-      "value": 20.15,
+      "value": 22.65,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-05",
-      "value": 20.15,
+      "value": 22.61,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-06",
-      "value": 20.18,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-07",
-      "value": 20.27,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-08",
-      "value": 20.28,
+      "value": 22.44,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-09",
-      "value": 20.23,
+      "value": 22.48,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-12",
-      "value": 20.15,
+      "value": 22.57,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-13",
-      "value": 20.21,
+      "value": 22.64,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-14",
-      "value": 20.29,
+      "value": 22.53,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-15",
-      "value": 20.33,
+      "value": 22.59,
       "mean": 22,
       "plus1": 32,
       "minus1": 16
     },
     {
       "date": "2000-06-16",
-      "value": 20.35,
+      "value": 22.68,
       "mean": 22,
       "plus1": 32,
       "minus1": 16

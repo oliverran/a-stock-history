@@ -1,9 +1,10 @@
 {
   "meta": {
     "id": "drawdowns",
-    "name": "Mag7 Drawdowns",
+    "name": "Mag7 回撤",
     "type": "drawdown",
-    "description": "Drawdowns from peak (%) (sample)"
+    "description": "距离峰值回撤（%）（示例）"
   },
-  "series": []
+  "series": [],
+  "events": []
 }

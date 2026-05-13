@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { generateAnnualReturns, generateDrawdown, generateTimeSeries, generateValuationBands } from './_generators';
+import { computeDrawdownEvents } from './_drawdown';
 import { ensureDir, writeJson } from './_utils';
 
 async function main() {
@@ -9,26 +10,28 @@ async function main() {
 
   const priceSeries = generateTimeSeries({ points: 1400, startVal: 30, volatility: 0.02, startDate: '1999-01-01', stepDays: 7 });
   const drawdownSeries = generateDrawdown(priceSeries);
+  const drawdownEvents = computeDrawdownEvents(drawdownSeries);
   const annualSeries = generateAnnualReturns(1999, new Date().getFullYear() - 1, { min: -60, max: 60 });
   const valuationSeries = generateValuationBands({ points: 850, startDate: '2002-01-01', base: 14, mean: 14, plus1: 18, minus1: 10 });
 
   await writeJson(path.join(dir, 'price.json'), {
-    meta: { id: 'price', name: 'Financials (XLF)', type: 'line', description: 'Long-run price (sample)' },
+    meta: { id: 'price', name: '金融（XLF）', type: 'line', description: '长期价格（示例）' },
     series: priceSeries,
   });
 
   await writeJson(path.join(dir, 'annual-returns.json'), {
-    meta: { id: 'annual-returns', name: 'XLF Annual Returns', type: 'bar', description: 'Annual returns (%) (sample)' },
+    meta: { id: 'annual-returns', name: 'XLF 年度回报', type: 'bar', description: '年度回报（%）（示例）' },
     series: annualSeries,
   });
 
   await writeJson(path.join(dir, 'drawdowns.json'), {
-    meta: { id: 'drawdowns', name: 'XLF Drawdowns', type: 'drawdown', description: 'Drawdowns from peak (%) (sample)' },
+    meta: { id: 'drawdowns', name: 'XLF 回撤', type: 'drawdown', description: '距离峰值回撤（%）（示例）' },
     series: drawdownSeries,
+    events: drawdownEvents,
   });
 
   await writeJson(path.join(dir, 'valuation.json'), {
-    meta: { id: 'valuation', name: 'XLF Valuation', type: 'valuation', description: 'Valuation bands (sample)' },
+    meta: { id: 'valuation', name: 'XLF 估值', type: 'valuation', description: '估值带（示例）' },
     series: valuationSeries,
   });
 }

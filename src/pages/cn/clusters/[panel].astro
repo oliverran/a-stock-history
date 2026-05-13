@@ -3,6 +3,7 @@ import PanelPage from '../../../layouts/PanelPage.astro';
 import { cnClustersHub } from '../../../content/cn/clusters';
 import { formatISODate } from '../../../lib/formatting/date';
 import { loadApiManifest } from '../../../lib/api/manifest';
+import { loadPublicApiJson } from '../../../lib/api/publicJson';
 import { buildArticleJsonLd, buildDatasetJsonLd } from '../../../lib/seo/jsonld';
 import { toAbsoluteUrl } from '../../../lib/seo/urls';
 
@@ -21,6 +22,7 @@ const lastUpdated = modified ? formatISODate(modified) : undefined;
 const site = Astro.site ? new URL(Astro.site) : undefined;
 const canonicalUrl = toAbsoluteUrl(Astro.url.pathname, site);
 const apiUrl = toAbsoluteUrl(def.apiPath, site);
+const apiData = await loadPublicApiJson(def.apiPath).catch(() => null);
 
 const jsonLd = [
   buildArticleJsonLd({
@@ -49,6 +51,7 @@ const relatedPanels = def.relatedKeys
   title={`${def.title} | A股编年史`}
   description={def.description}
   lead={def.lead}
+  judgement={def.judgement}
   apiEndpoint={def.apiPath}
   chartId={def.chart.id}
   chartTitle={def.chart.title}
@@ -56,10 +59,13 @@ const relatedPanels = def.relatedKeys
   chartHeight={def.chart.height}
   howToRead={def.howToRead}
   keyFindings={def.keyFindings}
+  methodology={def.methodology}
   sources={def.sources}
+  relatedLinks={def.relatedLinks}
   relatedPanels={relatedPanels}
   lastUpdated={lastUpdated}
   lang={cnClustersHub.lang}
   jsonLd={jsonLd}
+  apiData={apiData}
 />
 

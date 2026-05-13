@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local data/cache
+data/tmp/
+data/external/csindex/index-perf-cache/

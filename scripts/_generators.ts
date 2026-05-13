@@ -23,10 +23,14 @@ export function generateTimeSeries(params: {
 
 export function generateDrawdown(series: Array<{ date: string; value: number }>) {
   let peak = series[0]?.value ?? 0;
+  let peakDate = series[0]?.date ?? '';
   return series.map((it) => {
-    if (it.value > peak) peak = it.value;
+    if (it.value > peak) {
+      peak = it.value;
+      peakDate = it.date;
+    }
     const dd = peak === 0 ? 0 : ((it.value - peak) / peak) * 100;
-    return { date: it.date, value: Number(dd.toFixed(2)) };
+    return { date: it.date, value: Number(dd.toFixed(2)), peakDate };
   });
 }
 

@@ -1,9 +1,9 @@
 {
   "meta": {
     "id": "index",
-    "name": "Mag7 Composite",
+    "name": "Mag7 合成指数",
     "type": "line",
-    "description": "Composite price (sample)"
+    "description": "合成价格（示例）"
   },
   "series": []
 }

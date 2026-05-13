@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "star50-annual-returns",
+    "name": "科创50年度回报",
+    "type": "bar",
+    "description": "年度回报（%）（基于全收益指数）"
+  },
+  "series": [
+    {
+      "date": "2020",
+      "value": 40.02
+    },
+    {
+      "date": "2021",
+      "value": 0.65
+    },
+    {
+      "date": "2022",
+      "value": -31.08
+    },
+    {
+      "date": "2023",
+      "value": -10.61
+    },
+    {
+      "date": "2024",
+      "value": 16.89
+    },
+    {
+      "date": "2025",
+      "value": 36.52
+    },
+    {
+      "date": "2026",
+      "value": 28.26
+    }
+  ]
+}

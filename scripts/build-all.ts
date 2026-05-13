@@ -1,3 +1,6 @@
+await import('./build-broad-hs300');
+await import('./build-broad-cn-core');
+await import('./build-broad-cn-szse');
 await import('./build-cn-broad');
 await import('./build-cn-sectors');
 await import('./build-cn-clusters');

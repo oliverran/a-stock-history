@@ -1,9 +1,9 @@
 {
   "meta": {
     "id": "century",
-    "name": "Dow Jones",
+    "name": "道琼斯",
     "type": "line",
-    "description": "Century-scale price (sample)"
+    "description": "世纪尺度价格（示例）"
   },
   "series": []
 }

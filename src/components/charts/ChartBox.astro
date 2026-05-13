@@ -5,9 +5,10 @@ export interface Props {
   title: string;
   description?: string;
   height?: string;
+  lang?: string;
 }
 
-const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
+const { id, apiEndpoint, title, description, height = '500px', lang = 'zh-CN' } = Astro.props;
 ---
 
 <div class="chart-wrapper">
@@ -22,7 +23,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
     style={`height: ${height};`}
     data-endpoint={apiEndpoint}
   >
-    <div class="loading-state">Loading data...</div>
+    <div class="loading-state">{lang === 'zh-CN' ? '加载中…' : 'Loading data...'}</div>
   </div>
   
   <div class="chart-footer">
@@ -32,6 +33,30 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
 
 <script>
   import * as echarts from 'echarts';
+
+  function getLang() {
+    const l = document.documentElement.lang || 'zh-CN';
+    return l === 'zh-CN' ? 'zh-CN' : 'en';
+  }
+
+  function t(key: string) {
+    const lang = getLang();
+    const dict: Record<string, { 'zh-CN': string; en: string }> = {
+      loading: { 'zh-CN': '加载中…', en: 'Loading data...' },
+      failed: { 'zh-CN': '数据加载失败', en: 'Failed to load data' },
+      peTtm: { 'zh-CN': '市盈率(TTM)', en: 'PE(TTM)' },
+      mean: { 'zh-CN': '均值', en: 'Mean' },
+      plus1: { 'zh-CN': '+1σ', en: '+1 Std Dev' },
+      minus1: { 'zh-CN': '-1σ', en: '-1 Std Dev' },
+      yearsCount: { 'zh-CN': '年份数', en: 'Years Count' },
+      epsGrowth: { 'zh-CN': '盈利贡献', en: 'EPS Growth' },
+      peExpansion: { 'zh-CN': '估值贡献', en: 'PE Expansion' },
+      totalReturn: { 'zh-CN': '总回报', en: 'Total Return' },
+      intrayearMaxDrawdown: { 'zh-CN': '年内最大回撤', en: 'Intrayear Max Drawdown' },
+      finalReturn: { 'zh-CN': '年终收益', en: 'Final Return' },
+    };
+    return (dict[key] ?? dict.failed)[lang];
+  }
 
   // 基础颜色与字体配置
   const THEME = {
@@ -143,7 +168,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
     opt.xAxis.data = data.series.map((item: any) => item.date);
     opt.series = [
       {
-        name: 'PE(TTM)',
+        name: t('peTtm'),
         type: 'line',
         data: data.series.map((item: any) => item.value),
         showSymbol: false,
@@ -151,7 +176,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
         zIndex: 3
       },
       {
-        name: 'Mean',
+        name: t('mean'),
         type: 'line',
         data: data.series.map((item: any) => item.mean),
         showSymbol: false,
@@ -159,7 +184,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
         zIndex: 2
       },
       {
-        name: '+1 Std Dev',
+        name: t('plus1'),
         type: 'line',
         data: data.series.map((item: any) => item.plus1),
         showSymbol: false,
@@ -167,7 +192,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
         zIndex: 1
       },
       {
-        name: '-1 Std Dev',
+        name: t('minus1'),
         type: 'line',
         data: data.series.map((item: any) => item.minus1),
         showSymbol: false,
@@ -268,7 +293,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
     opt.xAxis.data = data.series.bins;
     opt.xAxis.axisLabel.formatter = (val: string) => val;
     opt.series = [{
-      name: 'Years Count',
+      name: t('yearsCount'),
       type: 'bar',
       data: data.series.counts,
       itemStyle: { color: THEME.colorLine },
@@ -290,21 +315,21 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
     
     opt.series = [
       {
-        name: 'EPS Growth',
+        name: t('epsGrowth'),
         type: 'bar',
         stack: 'total',
         data: data.series.map((item: any) => item.eps),
         itemStyle: { color: THEME.colorLine }
       },
       {
-        name: 'PE Expansion',
+        name: t('peExpansion'),
         type: 'bar',
         stack: 'total',
         data: data.series.map((item: any) => item.pe),
         itemStyle: { color: '#8c8c8c' }
       },
       {
-        name: 'Total Return',
+        name: t('totalReturn'),
         type: 'scatter',
         data: data.series.map((item: any) => item.total),
         itemStyle: { color: THEME.colorUp },
@@ -328,13 +353,13 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
     
     opt.series = [
       {
-        name: 'Intrayear Max Drawdown',
+        name: t('intrayearMaxDrawdown'),
         type: 'bar',
         data: data.series.map((item: any) => item.intrayear),
         itemStyle: { color: 'transparent', borderColor: THEME.colorDown, borderType: 'dashed', borderWidth: 1 }
       },
       {
-        name: 'Final Return',
+        name: t('finalReturn'),
         type: 'bar',
         data: data.series.map((item: any) => item.final),
         itemStyle: { color: (params: any) => params.value >= 0 ? THEME.colorUp : THEME.colorDown }
@@ -428,7 +453,7 @@ const { id, apiEndpoint, title, description, height = '500px' } = Astro.props;
         window.addEventListener('resize', () => chart.resize());
       } catch (error) {
         console.error('Failed to load chart data:', error);
-        el.innerHTML = '<div class="error-state">Failed to load data</div>';
+        el.innerHTML = `<div class="error-state">${t('failed')}</div>`;
       }
     });
   }

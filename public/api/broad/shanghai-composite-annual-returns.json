@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "id": "shanghai-composite-annual-returns",
+    "name": "上证综指年度回报",
+    "type": "bar",
+    "description": "年度回报（%）（基于全收益指数）"
+  },
+  "series": [
+    {
+      "date": "2012",
+      "value": 20.15
+    },
+    {
+      "date": "2013",
+      "value": -11.04
+    },
+    {
+      "date": "2014",
+      "value": 65.51
+    },
+    {
+      "date": "2015",
+      "value": -3.69
+    },
+    {
+      "date": "2016",
+      "value": -3.76
+    },
+    {
+      "date": "2017",
+      "value": 4.33
+    },
+    {
+      "date": "2020",
+      "value": 25.19
+    },
+    {
+      "date": "2021",
+      "value": 7.04
+    },
+    {
+      "date": "2022",
+      "value": -12.83
+    },
+    {
+      "date": "2023",
+      "value": -1.09
+    },
+    {
+      "date": "2024",
+      "value": 16.15
+    },
+    {
+      "date": "2025",
+      "value": 21.71
+    },
+    {
+      "date": "2026",
+      "value": 6.36
+    }
+  ]
+}

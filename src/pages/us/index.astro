@@ -6,24 +6,24 @@ import Card from '../../components/layout/Card.astro';
 ---
 
 <BaseLayout
-  title="U.S. Market Chronicle | Market Chronicle"
-  description="U.S. Market Chronicle: S&P 500, Nasdaq, Dow, Semis, XLK, Financials, Mag7."
-  lang="en"
+  title="美股 | A股编年史"
+  description="美股研究页：标普500、纳指、道指、半导体、科技（XLK）、金融（XLF）、Mag7。"
+  lang="zh-CN"
 >
   <PageHero
-    title="U.S. Market Chronicle"
-    description="A research-first market chronicle: every panel has a static URL, an API endpoint, and a short methodology note."
+    title="US / 美股"
+    description="研究优先的市场编年史：每张图都有固定链接、API 端点与简短方法说明。"
   />
 
   <div class="container">
     <CardGrid>
-      <Card href="/us/sp500" title="S&P 500" description="Century scale, annual outcomes, drawdowns, valuation anchors." />
-      <Card href="/us/nasdaq" title="Nasdaq" description="Composite lens, bubble echoes, concentration and valuation." />
-      <Card href="/us/dow" title="Dow Jones" description="Legacy benchmark, long-run shape and drawdown catalog." />
-      <Card href="/us/semi" title="Semiconductors" description="Cycle overlays, drawdowns, valuation anchors." />
-      <Card href="/us/xlk" title="Technology (XLK)" description="Sector lens, weighting shifts and concentration." />
-      <Card href="/us/fin" title="Financials (XLF)" description="Rates-sensitive lens, drawdowns and valuation." />
-      <Card href="/us/mag7" title="Mag7" description="Concentration, contribution and crowding proxies." />
+      <Card href="/us/sp500" title="标普500（S&P 500）" description="长周期形状、年度结果、回撤名册、估值锚点。" />
+      <Card href="/us/nasdaq" title="纳斯达克（Nasdaq）" description="科技权重更高：泡沫回声、集中度与估值。" />
+      <Card href="/us/dow" title="道琼斯（Dow）" description="老牌基准：长期形状与回撤目录。" />
+      <Card href="/us/semi" title="半导体（Semis）" description="周期叠加：回撤、年度结果与估值锚。" />
+      <Card href="/us/xlk" title="科技（XLK）" description="行业视角：权重迁移、集中度与估值。" />
+      <Card href="/us/fin" title="金融（XLF）" description="利率敏感：回撤与估值温度计。" />
+      <Card href="/us/mag7" title="Mag7（七巨头）" description="集中度、贡献度与拥挤度代理。" />
     </CardGrid>
   </div>
 </BaseLayout>

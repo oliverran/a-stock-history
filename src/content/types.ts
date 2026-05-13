@@ -5,6 +5,7 @@ export type PanelDef = {
   title: string;
   description: string;
   lead?: string;
+  judgement?: string;
   apiPath: string;
   chart: {
     id: string;
@@ -14,7 +15,9 @@ export type PanelDef = {
   };
   howToRead?: string;
   keyFindings?: string[];
+  methodology?: string;
   sources?: string[];
+  relatedLinks?: Array<{ href: string; title: string; description?: string }>;
   relatedKeys?: string[];
 };
 

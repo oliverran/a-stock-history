@@ -1,118 +1,118 @@
 {
   "meta": {
     "id": "annual-returns",
-    "name": "XLF Annual Returns",
+    "name": "XLF 年度回报",
     "type": "bar",
-    "description": "Annual returns (%) (sample)"
+    "description": "年度回报（%）（示例）"
   },
   "series": [
     {
       "date": "1999",
-      "value": 14.42
+      "value": 45.43
     },
     {
       "date": "2000",
-      "value": 38.29
+      "value": 55.73
     },
     {
       "date": "2001",
-      "value": 49
+      "value": 22.06
     },
     {
       "date": "2002",
-      "value": 52.69
+      "value": -32.58
     },
     {
       "date": "2003",
-      "value": -38.75
+      "value": 28.92
     },
     {
       "date": "2004",
-      "value": -59.47
+      "value": 26.63
     },
     {
       "date": "2005",
-      "value": -9.02
+      "value": -27.21
     },
     {
       "date": "2006",
-      "value": -38.38
+      "value": -38.27
     },
     {
       "date": "2007",
-      "value": 1.09
+      "value": 46.56
     },
     {
       "date": "2008",
-      "value": -30.15
+      "value": 49.42
     },
     {
       "date": "2009",
-      "value": 9.24
+      "value": 7.75
     },
     {
       "date": "2010",
-      "value": 47.62
+      "value": -41.48
     },
     {
       "date": "2011",
-      "value": 5.92
+      "value": -21.1
     },
     {
       "date": "2012",
-      "value": -35.24
+      "value": -46.19
     },
     {
       "date": "2013",
-      "value": -46.68
+      "value": 12.52
     },
     {
       "date": "2014",
-      "value": -27.17
+      "value": 21.29
     },
     {
       "date": "2015",
-      "value": -56.12
+      "value": -23.45
     },
     {
       "date": "2016",
-      "value": -59
+      "value": -53.5
     },
     {
       "date": "2017",
-      "value": -39.7
+      "value": -51.12
     },
     {
       "date": "2018",
-      "value": 26.15
+      "value": -34.29
     },
     {
       "date": "2019",
-      "value": 24.19
+      "value": 7.1
     },
     {
       "date": "2020",
-      "value": -29.29
+      "value": 29.66
     },
     {
       "date": "2021",
-      "value": -41.4
+      "value": 5.59
     },
     {
       "date": "2022",
-      "value": -19.08
+      "value": 59.32
     },
     {
       "date": "2023",
-      "value": -7.96
+      "value": 47.46
     },
     {
       "date": "2024",
-      "value": 14.98
+      "value": 31.07
     },
     {
       "date": "2025",
-      "value": 45.78
+      "value": -50.97
     }
   ]
 }

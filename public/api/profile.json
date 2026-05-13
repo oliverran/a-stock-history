@@ -1,14 +1,14 @@
 {
   "site": "Market Chronicle",
-  "generatedAt": "2026-05-13T06:28:10.636Z",
+  "generatedAt": "2026-05-13T10:06:10.190Z",
   "markets": [
     {
       "market": "cn",
       "modules": [
         {
           "module": "broad",
-          "count": 18,
-          "lastModified": "2026-05-13T05:26:59.915Z"
+          "count": 48,
+          "lastModified": "2026-05-13T10:06:10.060Z"
         },
         {
           "module": "clusters",
@@ -17,8 +17,8 @@
         },
         {
           "module": "sectors",
-          "count": 9,
-          "lastModified": "2026-05-13T05:26:59.942Z"
+          "count": 11,
+          "lastModified": "2026-05-13T07:00:41.130Z"
         }
       ]
     },
@@ -28,43 +28,43 @@
         {
           "module": "dow",
           "count": 4,
-          "lastModified": "2026-05-13T06:28:10.600Z"
+          "lastModified": "2026-05-13T10:06:10.125Z"
         },
         {
           "module": "fin",
           "count": 4,
-          "lastModified": "2026-05-13T06:28:10.620Z"
+          "lastModified": "2026-05-13T10:06:10.177Z"
         },
         {
           "module": "mag7",
           "count": 3,
-          "lastModified": "2026-05-13T06:28:10.624Z"
+          "lastModified": "2026-05-13T10:06:10.181Z"
         },
         {
           "module": "nasdaq",
           "count": 4,
-          "lastModified": "2026-05-13T06:28:10.593Z"
+          "lastModified": "2026-05-13T10:06:10.120Z"
         },
         {
           "module": "semi",
           "count": 4,
-          "lastModified": "2026-05-13T06:28:10.607Z"
+          "lastModified": "2026-05-13T10:06:10.133Z"
         },
         {
           "module": "sp500",
-          "count": 4,
-          "lastModified": "2026-05-13T06:28:10.585Z"
+          "count": 6,
+          "lastModified": "2026-05-13T10:06:10.109Z"
         },
         {
           "module": "xlk",
           "count": 4,
-          "lastModified": "2026-05-13T06:28:10.613Z"
+          "lastModified": "2026-05-13T10:06:10.140Z"
         }
       ]
     }
   ],
   "totals": {
-    "count": 61,
-    "bytes": 5554707
+    "count": 95,
+    "bytes": 12018644
   }
 }
